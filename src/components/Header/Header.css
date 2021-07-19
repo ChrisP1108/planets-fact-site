@@ -1,5 +1,4 @@
 a, a:hover, a:focus, a:active {
-    text-decoration: none;
     color: inherit!important;
 }
 
@@ -16,29 +15,71 @@ a.navbar-brand {
     border-bottom: 1px #38384F solid;
 }
 
-nav.bottom-border.navbar {
-    padding-top: 1.313rem;
-    padding-bottom: 1.313rem;
+nav {
+    padding: 0!important;
 }
 
-.nav-align {
+ul.nav {
     display: flex;
     justify-content: space-between;
 }
 
 .navstyle {
-    color: #dadada!important;
+    color: #bbbbbb!important;
     font-family: 'Spartan', sans-serif;
     font-size: 0.688rem;
-    margin-right: 0.625rem;
+    padding: 2.032rem 0.03125rem!important;
     border-top: 4px #419ebb00 solid!important;
-    height: 100%!important+;
 }
 
 .mercury:hover {
     border-top: 4px #419EBB solid!important;
 }
 
-.container {
-    margin-left: 2rem!important;
+.venus:hover {
+    border-top: 4px #EDA249 solid!important;
+}
+
+.earth:hover {
+    border-top: 4px #6D2ED5 solid!important;
+}
+
+.mars:hover {
+    border-top: 4px #D14C32 solid!important;
+}
+
+.jupiter:hover {
+    border-top: 4px #D83A34 solid!important;
+}
+
+.saturn:hover {
+    border-top: 4px #CD5120 solid!important;
+}
+
+.uranus:hover {
+    border-top: 4px #1EC1A2 solid!important;
+}
+
+.neptune:hover {
+    border-top: 4px #2D68F0 solid!important;
+}
+
+.navbar-collapse {
+    margin-left: auto!important;
+    margin-right: 0!important;
+}
+
+.row {
+    margin: 0 2rem!important;
+    padding: 0!important;
+    width: 100%!important;
+    justify-content: space-between!important;
+}
+
+.brand-align {
+    padding-left: 0!important;
+}
+
+.col-lg-10, .col-lg-6 {
+    padding: 0!important;
 }

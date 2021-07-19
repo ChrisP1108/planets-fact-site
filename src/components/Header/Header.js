@@ -14,41 +14,42 @@ const Header = () => {
     }
 
     return (
-        <Navbar className='bottom-border' sticky='top' expand='md'>
-            <div className="container">
-                <NavbarBrand href="/">
-                    THE PLANETS
-                </NavbarBrand>
-                <NavbarToggler onClick={toggleNav} className="mr-2" />
-                <Collapse isOpen={isNavOpen} navbar>
-                    <Nav navbar className="mx-auto">
+        <Navbar className="bottom-border" sticky="top" expand="md">
+            <div className="row">
+                <div className="col-md-12 col-lg-2 my-auto brand-align">
+                    <NavbarBrand href="/" className="justify-content-md-center">
+                        THE PLANETS
+                    </NavbarBrand>
+                </div>
+                <div className="col-md-12 col-lg-6">
+                    <Nav>
                         <NavItem>
                             <NavLink activeClassName="navactive" className="nav-link navstyle mercury" to="/mercury">MERCURY</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink activeClassName="navactive" className="nav-link navstyle ml-md-2 ml-xl-5" to="/venus">VENUS</NavLink>
+                            <NavLink activeClassName="navactive" className="nav-link navstyle venus" to="/venus">VENUS</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink activeClassName="navactive" className="nav-link navstyle ml-md-2 ml-xl-5" to="/earth">EARTH</NavLink>
+                            <NavLink activeClassName="navactive" className="nav-link navstyle earth" to="/earth">EARTH</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink activeClassName="navactive" className="nav-link navstyle ml-md-2 ml-xl-5" to="/mars">MARS</NavLink>
+                            <NavLink activeClassName="navactive" className="nav-link navstyle mars" to="/mars">MARS</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink activeClassName="navactive" className="nav-link navstyle ml-md-2 ml-xl-5" to="/jupiter">JUPITER</NavLink>
+                            <NavLink activeClassName="navactive" className="nav-link navstyle jupiter" to="/jupiter">JUPITER</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink activeClassName="navactive" className="nav-link navstyle ml-md-2 ml-xl-5" to="/saturn">SATURN</NavLink>
+                            <NavLink activeClassName="navactive" className="nav-link navstyle saturn" to="/saturn">SATURN</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink activeClassName="navactive" className="nav-link navstyle ml-md-2 ml-xl-5" to="/uranus">URANUS</NavLink>
+                            <NavLink activeClassName="navactive" className="nav-link navstyle uranus" to="/uranus">URANUS</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink activeClassName="navactive" className="nav-link navstyle ml-md-2 ml-xl-5" to="/neptune">NEPTUNE</NavLink>
+                            <NavLink activeClassName="navactive" className="nav-link navstyle neptune" to="/neptune">NEPTUNE</NavLink>
                         </NavItem>
                     </Nav>
-                </Collapse>
-            </div>
+                </div>
+            </div>  
         </Navbar>
     )
 }
