@@ -1,6 +1,6 @@
 a, a:hover, a:focus, a:active {
     text-decoration: none;
-    color: inherit;
+    color: inherit!important;
 }
 
 a.navbar-brand {
@@ -13,10 +13,32 @@ a.navbar-brand {
 }
 
 .bottom-border {
-    border-bottom: 1px #838391 solid;
+    border-bottom: 1px #38384F solid;
 }
 
 nav.bottom-border.navbar {
     padding-top: 1.313rem;
     padding-bottom: 1.313rem;
+}
+
+.nav-align {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navstyle {
+    color: #dadada!important;
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.688rem;
+    margin-right: 0.625rem;
+    border-top: 4px #419ebb00 solid!important;
+    height: 100%!important+;
+}
+
+.mercury:hover {
+    border-top: 4px #419EBB solid!important;
+}
+
+.container {
+    margin-left: 2rem!important;
 }
