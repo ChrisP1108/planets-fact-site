@@ -16,12 +16,12 @@ const Header = () => {
     return (
         <Navbar className="bottom-border" sticky="top" expand="md">
             <div className="row">
-                <div className="col-md-12 col-lg-2 my-auto brand-align">
-                    <NavbarBrand href="/" className="justify-content-md-center">
+                <div className="col-md-12 col-lg-2 logo justify-content-start justify-content-md-center justify-content-lg-start">
+                    <NavbarBrand href="/mercury">
                         THE PLANETS
                     </NavbarBrand>
                 </div>
-                <div className="col-md-12 col-lg-6">
+                <div className="col-md-12 col-lg-8 col-xl-6 d-md-block d-none">
                     <Nav>
                         <NavItem>
                             <NavLink activeClassName="navactive" className="nav-link navstyle mercury" to="/mercury">MERCURY</NavLink>
