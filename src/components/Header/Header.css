@@ -11,7 +11,11 @@ a.navbar-brand {
     text-decoration: none;
 }
 
-.bottom-border {
+.header-background {
+    background-color: #070724;
+}
+
+.header-bottom-border {
     border-bottom: 1px #38384F solid;
 }
 
@@ -39,6 +43,10 @@ ul.nav {
     padding: 1.344rem 0!important;
 }
 
+.cursor {
+    cursor: pointer!important;
+}
+
 .circle {
     height: 20px!important;
     width: 20px!important;
@@ -48,7 +56,7 @@ ul.nav {
 }
 
 .mobile-border {
-    border-bottom: 1px #282838 solid;
+    border-bottom: 1px #242433 solid;
 }
 
 .mobile-margin {
@@ -62,6 +70,9 @@ ul.nav {
 
 .mobile-background {
     background-color: #070724;
+    position: absolute;
+    top: 0rem;
+    left: -65rem;
 }
 
 .mobile-chevron {
@@ -188,6 +199,24 @@ ul.nav {
     }
 }
 
-.cursor {
-    cursor: pointer!important;
+.mobile-trans-on {
+    animation-name: mobile-trans-right;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.mobile-trans-off {
+    animation-name: mobile-trans-left;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mobile-trans-right {
+    from {left: -65rem;}
+    to {left: 0rem;}
+}
+
+@keyframes mobile-trans-left {
+    from {left: 0rem;}
+    to {left: -65rem;}
 }

@@ -8,11 +8,13 @@ import './Header.css';
 const Header = () => {
 
     const [isNavOpen, setNavOpen] = useState(false);
+    const [clicked, setClick] = useState(false);
 
     const history = useHistory();
 
     const toggleNav = () => {
         setNavOpen(!isNavOpen);
+        setClick(clicked === false ? !clicked : clicked);
     }
 
     const mobileNavigate = link => {
@@ -40,9 +42,16 @@ const Header = () => {
         );
     });
 
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            setNavOpen(isNavOpen === true ? !isNavOpen : isNavOpen);
+            setClick(clicked === true ? !clicked : clicked);
+        }
+    })
+
     return (
         <>
-            <Navbar className="bottom-border" sticky="top" expand="md">
+            <Navbar className="header-bottom-border" sticky="top">
                 <div className="row">
                     <div className="col-3 col-md-12 col-lg-2 logo justify-content-md-center justify-content-lg-start">
                         <NavbarBrand href="/mercury">
@@ -57,9 +66,9 @@ const Header = () => {
                     </div>
                 </div>
             </Navbar>
-            <div className={`${isNavOpen ? 'd-block' : 'd-none'} d-md-none`}>
+            <div className="d-md-none">
                 <Navbar>
-                    <div className="mobile-margin mobile-background">
+                    <div className={`${isNavOpen && clicked ? 'mobile-trans-on' : clicked && 'mobile-trans-off'} mobile-margin mobile-background`}>
                         <Nav>
                             {mobileMapping}
                         </Nav>
