@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Nav, Navbar, NavbarBrand, NavItem } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import { NAVLINKS } from '../../Content';
 import '../../App.css';
 import './Header.css';
@@ -10,6 +10,13 @@ const Header = () => {
     const [isNavOpen, setNavOpen] = useState(false);
 
     const toggleNav = () => {
+        setNavOpen(!isNavOpen);
+    }
+
+    const history = useHistory();
+
+    const mobileNavigate = link => {
+        history.push(`/${link}`);
         setNavOpen(!isNavOpen);
     }
 
@@ -23,11 +30,11 @@ const Header = () => {
 
     const mobileMapping = NAVLINKS.map(link => {
         return (
-            <div className={`${link.id !== NAVLINKS.length && 'mobile-border'} d-flex flex-row w-100`}>
+            <div key={link.id} onClick={() => mobileNavigate(link.planet)}className={`${link.id !== NAVLINKS.length && 'mobile-border'} d-flex flex-row w-100 cursor`}>
                 <span className={`mobile-${link.planet} circle my-auto`}></span>
-                <NavItem key={link.id}>
-                    <NavLink className="mobilestyle nav-link mobile-item-margin" to={`/${link.planet}`}>{link.title}</NavLink>
-                </NavItem>
+                    <p className="mobilestyle mobile-item-margin my-auto">
+                        {link.title}
+                    </p>
             </div>
         );
     });
