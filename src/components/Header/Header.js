@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, 
-    Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Input, Label } from 'reactstrap';
+import { Nav, Navbar, NavbarBrand, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import { NAVLINKS } from '../../Content';
 import '../../App.css';
-import './Header.css'
+import './Header.css';
 
 const Header = () => {
 
@@ -11,8 +11,15 @@ const Header = () => {
 
     const toggleNav = () => {
         setNavOpen(!isNavOpen);
-        console.log(isNavOpen);
     }
+
+    const navMapping = NAVLINKS.map(link => {
+        return (
+            <NavItem key={link.id}>
+                <NavLink activeClassName="navactive" className={`nav-link navstyle ${link.planet}`} to={`/${link.planet}`}>{link.title}</NavLink>
+            </NavItem>
+        );
+    });
 
     return (
         <Navbar className="bottom-border" sticky="top" expand="md">
@@ -22,35 +29,15 @@ const Header = () => {
                         THE PLANETS
                     </NavbarBrand>
                 </div>
-                <span onClick={toggleNav} className="hamburger col-1 my-auto d-md-none"></span>
+                <span onClick={toggleNav} className={`${isNavOpen ? 'hamburger-active' : 'hamburger'} col-1 my-auto d-md-none`}></span>
                 <div className="col-md-12 col-lg-8 col-xl-6 d-md-block d-none">
                     <Nav>
-                        <NavItem>
-                            <NavLink activeClassName="navactive" className="nav-link navstyle mercury" to="/mercury">MERCURY</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink activeClassName="navactive" className="nav-link navstyle venus" to="/venus">VENUS</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink activeClassName="navactive" className="nav-link navstyle earth" to="/earth">EARTH</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink activeClassName="navactive" className="nav-link navstyle mars" to="/mars">MARS</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink activeClassName="navactive" className="nav-link navstyle jupiter" to="/jupiter">JUPITER</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink activeClassName="navactive" className="nav-link navstyle saturn" to="/saturn">SATURN</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink activeClassName="navactive" className="nav-link navstyle uranus" to="/uranus">URANUS</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink activeClassName="navactive" className="nav-link navstyle neptune" to="/neptune">NEPTUNE</NavLink>
-                        </NavItem>
+                        {navMapping}
                     </Nav>
                 </div>
+                {/* <div className="d-md-none">
+                    <h1>Test</h1>
+                </div> */}
             </div>  
         </Navbar>
     )

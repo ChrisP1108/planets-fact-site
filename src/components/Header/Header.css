@@ -86,12 +86,14 @@ ul.nav {
     background-image: url(../../assets/icon-hamburger.svg);
     width: 24px!important;
     height: 17px!important;
+    transition: .15s;
 }
 
 .hamburger-active {
     background-image: url(../../assets/icon-hamburger-active.svg);
     width: 24px!important;
     min-height: 17px!important;
+    transition: .15s;
 }
 
 
