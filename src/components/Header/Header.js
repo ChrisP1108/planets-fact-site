@@ -21,25 +21,44 @@ const Header = () => {
         );
     });
 
+    const mobileMapping = NAVLINKS.map(link => {
+        return (
+            <div className={`${link.id !== NAVLINKS.length && 'mobile-border'} d-flex flex-row w-100`}>
+                <span className={`mobile-${link.planet} circle my-auto`}></span>
+                <NavItem key={link.id}>
+                    <NavLink className="mobilestyle nav-link mobile-item-margin" to={`/${link.planet}`}>{link.title}</NavLink>
+                </NavItem>
+            </div>
+        );
+    });
+
     return (
-        <Navbar className="bottom-border" sticky="top" expand="md">
-            <div className="row">
-                <div className="col-3 col-md-12 col-lg-2 logo justify-content-md-center justify-content-lg-start">
-                    <NavbarBrand href="/mercury">
-                        THE PLANETS
-                    </NavbarBrand>
+        <>
+            <Navbar className="bottom-border" sticky="top" expand="md">
+                <div className="row">
+                    <div className="col-3 col-md-12 col-lg-2 logo justify-content-md-center justify-content-lg-start">
+                        <NavbarBrand href="/mercury">
+                            THE PLANETS
+                        </NavbarBrand>
+                    </div>
+                    <span onClick={toggleNav} className={`${isNavOpen ? 'hamburger-active' : 'hamburger'} col-1 my-auto d-md-none`}></span>
+                    <div className="col-md-12 col-lg-8 col-xl-6 d-md-block d-none">
+                        <Nav>
+                            {navMapping}
+                        </Nav>
+                    </div>
                 </div>
-                <span onClick={toggleNav} className={`${isNavOpen ? 'hamburger-active' : 'hamburger'} col-1 my-auto d-md-none`}></span>
-                <div className="col-md-12 col-lg-8 col-xl-6 d-md-block d-none">
-                    <Nav>
-                        {navMapping}
-                    </Nav>
-                </div>
-                {/* <div className="d-md-none">
-                    <h1>Test</h1>
-                </div> */}
+            </Navbar>
+            <div className={`${isNavOpen ? 'd-block' : 'd-none'} d-md-none`}>
+                <Navbar>
+                    <div className="mt-4 mobile-margin">
+                        <Nav>
+                            {mobileMapping}
+                        </Nav>
+                    </div>
+                </Navbar>
             </div>  
-        </Navbar>
+        </>
     )
 }
 

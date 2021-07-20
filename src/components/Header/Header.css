@@ -32,6 +32,65 @@ ul.nav {
     border-top: 4px #419ebb00 solid!important;
 }
 
+.mobilestyle {
+    color: #ffffff;
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.938rem;
+    padding: 1.344rem 0!important;
+}
+
+.circle {
+    height: 20px!important;
+    width: 20px!important;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: block;
+}
+
+.mobile-border {
+    border-bottom: 1px #38384F solid;
+}
+
+.mobile-margin {
+    margin: 1.5rem;
+}
+
+.mobile-item-margin {
+    margin-left: 1.5rem;
+}
+
+.mobile-mercury {
+    background-color: #DEF4FC
+}
+
+.mobile-venus {
+    background-color: #F7CC7F
+}
+
+.mobile-earth {
+    background-color: #545BFE
+}
+
+.mobile-mars {
+    background-color: #FF6A45
+}
+
+.mobile-jupiter {
+    background-color: #ECAD7A
+}
+
+.mobile-saturn {
+    background-color: #FCCB6B
+}
+
+.mobile-uranus {
+    background-color: #65F0D5
+}
+
+.mobile-neptune {
+    background-color: #497EFA
+}
+
 .mercury:hover {
     border-top: 4px #419EBB solid!important;
 }
