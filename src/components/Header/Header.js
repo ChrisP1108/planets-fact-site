@@ -9,11 +9,11 @@ const Header = () => {
 
     const [isNavOpen, setNavOpen] = useState(false);
 
+    const history = useHistory();
+
     const toggleNav = () => {
         setNavOpen(!isNavOpen);
     }
-
-    const history = useHistory();
 
     const mobileNavigate = link => {
         history.push(`/${link}`);
@@ -32,9 +32,10 @@ const Header = () => {
         return (
             <div key={link.id} onClick={() => mobileNavigate(link.planet)}className={`${link.id !== NAVLINKS.length && 'mobile-border'} d-flex flex-row w-100 cursor`}>
                 <span className={`mobile-${link.planet} circle my-auto`}></span>
-                    <p className="mobilestyle mobile-item-margin my-auto">
-                        {link.title}
-                    </p>
+                <p className="mobilestyle mobile-title-margin my-auto">
+                    {link.title}
+                </p>
+                <span className="mobile-chevron my-auto"></span>
             </div>
         );
     });
@@ -58,7 +59,7 @@ const Header = () => {
             </Navbar>
             <div className={`${isNavOpen ? 'd-block' : 'd-none'} d-md-none`}>
                 <Navbar>
-                    <div className="mt-4 mobile-margin">
+                    <div className="mobile-margin mobile-background">
                         <Nav>
                             {mobileMapping}
                         </Nav>
