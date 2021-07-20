@@ -70,14 +70,45 @@ ul.nav {
 }
 
 .row {
-    margin: 0 2rem!important;
+    margin: 0 1.5rem!important;
     padding: 0!important;
     width: 100%!important;
     justify-content: space-between!important;
 }
 
 .logo {
-    padding: 1.357rem 0 .644rem!important;
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: .813rem 0;
+    padding-left: 0!important;
+}
+
+.hamburger {
+    background-image: url(../../assets/icon-hamburger.svg);
+    width: 24px!important;
+    height: 17px!important;
+}
+
+.hamburger-active {
+    background-image: url(../../assets/icon-hamburger-active.svg);
+    width: 24px!important;
+    min-height: 17px!important;
+}
+
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.hamburger-active:hover {
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    .logo {
+        padding: 1.357rem 0 .644rem!important;
+        display: flex;
+    }
+    .row {
+        margin: 0 2rem!important;
+    }
 }

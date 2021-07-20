@@ -11,16 +11,18 @@ const Header = () => {
 
     const toggleNav = () => {
         setNavOpen(!isNavOpen);
+        console.log(isNavOpen);
     }
 
     return (
         <Navbar className="bottom-border" sticky="top" expand="md">
             <div className="row">
-                <div className="col-md-12 col-lg-2 logo justify-content-start justify-content-md-center justify-content-lg-start">
+                <div className="col-3 col-md-12 col-lg-2 logo justify-content-md-center justify-content-lg-start">
                     <NavbarBrand href="/mercury">
                         THE PLANETS
                     </NavbarBrand>
                 </div>
+                <span onClick={toggleNav} className="hamburger col-1 my-auto d-md-none"></span>
                 <div className="col-md-12 col-lg-8 col-xl-6 d-md-block d-none">
                     <Nav>
                         <NavItem>
