@@ -1,6 +1,5 @@
 a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
+    color: inherit!important;
 }
 
 a.navbar-brand {
@@ -12,11 +11,212 @@ a.navbar-brand {
     text-decoration: none;
 }
 
-.bottom-border {
-    border-bottom: 1px #838391 solid;
+.header-background {
+    background-color: #070724;
 }
 
-nav.bottom-border.navbar {
-    padding-top: 1.313rem;
-    padding-bottom: 1.313rem;
+.header-bottom-border {
+    border-bottom: 1px #38384F solid;
+}
+
+nav {
+    padding: 0!important;
+}
+
+ul.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navstyle {
+    color: #bbbbbb!important;
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.688rem;
+    padding: 2.032rem 0.03125rem!important;
+    border-top: 4px #419ebb00 solid!important;
+}
+
+.mobilestyle {
+    color: #ffffff;
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.938rem;
+    padding: 1.344rem 0!important;
+}
+
+.cursor {
+    cursor: pointer!important;
+}
+
+.circle {
+    height: 20px!important;
+    width: 20px!important;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: block;
+}
+
+.mobile-border {
+    border-bottom: 1px #242433 solid;
+}
+
+.mobile-margin {
+    margin: 0;
+    padding: 1.5rem 1.5rem;
+}
+
+.mobile-title-margin {
+    margin-left: 1.5rem;
+}
+
+.mobile-background {
+    background-color: #070724;
+    position: absolute;
+    top: 0rem;
+    left: -65rem;
+}
+
+.mobile-chevron {
+    background-image: url(../../assets/icon-chevron.svg);
+    width: 6px!important;
+    height: 8px!important;
+    transform: scale(1.2);
+    margin-left: auto;
+    margin-right: .5rem;
+}
+
+.mobile-mercury {
+    background-color: #DEF4FC
+}
+
+.mobile-venus {
+    background-color: #F7CC7F
+}
+
+.mobile-earth {
+    background-color: #545BFE
+}
+
+.mobile-mars {
+    background-color: #FF6A45
+}
+
+.mobile-jupiter {
+    background-color: #ECAD7A
+}
+
+.mobile-saturn {
+    background-color: #FCCB6B
+}
+
+.mobile-uranus {
+    background-color: #65F0D5
+}
+
+.mobile-neptune {
+    background-color: #497EFA
+}
+
+.mercury:hover {
+    border-top: 4px #419EBB solid!important;
+}
+
+.venus:hover {
+    border-top: 4px #EDA249 solid!important;
+}
+
+.earth:hover {
+    border-top: 4px #6D2ED5 solid!important;
+}
+
+.mars:hover {
+    border-top: 4px #D14C32 solid!important;
+}
+
+.jupiter:hover {
+    border-top: 4px #D83A34 solid!important;
+}
+
+.saturn:hover {
+    border-top: 4px #CD5120 solid!important;
+}
+
+.uranus:hover {
+    border-top: 4px #1EC1A2 solid!important;
+}
+
+.neptune:hover {
+    border-top: 4px #2D68F0 solid!important;
+}
+
+.navbar-collapse {
+    margin-left: auto!important;
+    margin-right: 0!important;
+}
+
+.row {
+    margin: 0 1.5rem!important;
+    padding: 0!important;
+    width: 100%!important;
+    justify-content: space-between!important;
+}
+
+.logo {
+    margin: 0;
+    padding: .813rem 0;
+    padding-left: 0!important;
+}
+
+.hamburger {
+    background-image: url(../../assets/icon-hamburger.svg);
+    width: 24px!important;
+    height: 17px!important;
+    transition: .15s;
+}
+
+.hamburger-active {
+    background-image: url(../../assets/icon-hamburger-active.svg);
+    width: 24px!important;
+    min-height: 17px!important;
+    transition: .15s;
+}
+
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.hamburger-active:hover {
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    .logo {
+        padding: 1.357rem 0 .644rem!important;
+        display: flex;
+    }
+    .row {
+        margin: 0 2rem!important;
+    }
+}
+
+.mobile-trans-on {
+    animation-name: mobile-trans-right;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.mobile-trans-off {
+    animation-name: mobile-trans-left;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mobile-trans-right {
+    from {left: -65rem;}
+    to {left: 0rem;}
+}
+
+@keyframes mobile-trans-left {
+    from {left: 0rem;}
+    to {left: -65rem;}
 }
