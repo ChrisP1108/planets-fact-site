@@ -10,7 +10,6 @@ import './Uranus.css';
 import './Neptune.css';
 
 const Page = ({ content }) => {
-
     return (
         <div className='container'>
             <div className="row">

@@ -1,15 +1,15 @@
 .Planet-Saturn {
     background-image: url(../../assets/planet-saturn.svg);
-    width: 18.125rem!important;
-    height: 18.125rem!important;
-    transform: scale(.3827586);
+    width: 41.631rem!important;
+    height: 41.631rem!important;
+    transform: scale(.38433);
 }
 
 .Internal-Saturn {
     background-image: url(../../assets/planet-saturn-internal.svg);
-    width: 18.125rem!important;
-    height: 18.125rem!important;
-    transform: scale(.3827586);
+    width: 41.631rem!important;
+    height: 41.631rem!important;
+    transform: scale(.38433);
 }
 
 .Geology-Saturn {
@@ -21,10 +21,10 @@
 
 @media(min-width: 768px) {
     .Planet-Saturn {
-        transform: scale(.6344827);
+        transform: scale(.63355);
     }
     .Internal-Saturn {
-        transform: scale(.6344827);
+        transform: scale(.63355);
     }
     .Geology-Saturn {
         transform: scale(.31724135);
