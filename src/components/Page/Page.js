@@ -1,4 +1,6 @@
-const Page = () => {
+const Page = ({ content }) => {
+
+    console.log(content);
     return (
         <div>
             
