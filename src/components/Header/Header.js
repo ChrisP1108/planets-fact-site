@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Nav, Navbar, NavbarBrand, NavItem } from 'reactstrap';
 import { NavLink, useHistory } from 'react-router-dom';
 import { NAVLINKS } from '../../Content';
-import '../../App.css';
 import './Header.css';
+import '../../App.css';
 
 const Header = () => {
 

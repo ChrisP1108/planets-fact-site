@@ -1,0 +1,40 @@
+h1 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 2.5rem!important;
+    font-weight: 400!important
+}
+
+h2 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.563rem!important;
+    font-weight: 600!important;
+}
+
+p {
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.688!important;
+    font-weight: 400!important;
+    color: #ffffff!important;
+}
+
+.col {
+    padding: 0!important;
+}
+
+.container-margin {
+    margin: 0rem 10.313rem 3.5rem!important;
+    padding: 0!important;
+}
+
+@media(min-width: 768px) {
+    h1 {
+        font-size: 3rem!important;
+    }
+}
+
+@media(min-width: 992px) {
+    h1 {
+        font-size: 5rem!important;
+    }
+}
+

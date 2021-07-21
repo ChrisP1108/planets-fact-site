@@ -7,6 +7,7 @@ a.navbar-brand {
     margin: 0;
     padding: 0;
     font-size: 1.75rem;
+    font-weight: 600;
     color: #ffffff;
     text-decoration: none;
 }
@@ -32,6 +33,7 @@ ul.nav {
     color: #bbbbbb!important;
     font-family: 'Spartan', sans-serif;
     font-size: 0.688rem;
+    font-weight: 600!important;
     padding: 2.032rem 0.03125rem!important;
     border-top: 0.25rem #419ebb00 solid!important;
 }
@@ -40,6 +42,7 @@ ul.nav {
     color: #ffffff;
     font-family: 'Spartan', sans-serif;
     font-size: 0.938rem;
+    font-weight: 700!important;
     padding: 1.344rem 0!important;
 }
 
@@ -201,23 +204,23 @@ ul.nav {
 }
 
 .mobile-trans-on {
-    animation-name: mobile-trans-right;
-    animation-duration: .5s;
+    animation-name: mobile-trans-in;
+    animation-duration: .25s;
     animation-fill-mode: forwards;
 }
 
 .mobile-trans-off {
-    animation-name: mobile-trans-left;
-    animation-duration: .5s;
+    animation-name: mobile-trans-out;
+    animation-duration: .25s;
     animation-fill-mode: forwards;
 }
 
-@keyframes mobile-trans-right {
+@keyframes mobile-trans-in {
     from {left: -68rem;}
     to {left: 0rem;}
 }
 
-@keyframes mobile-trans-left {
+@keyframes mobile-trans-out {
     from {left: 0rem;}
     to {left: -68rem;}
 }
