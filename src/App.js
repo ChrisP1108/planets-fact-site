@@ -2,7 +2,7 @@ import { BrowserRouter, Switch, Route, Redirect } from'react-router-dom';
 import Header from './components/Header/Header.js';
 import Page from './components/Page/Page.js';
 import './App.css';
-import { NAVLINKS, MERCURY, VENUS, EARTH, MARS, JUPITER, SATURN, URANUS, NEPTUNE } from './Content'
+import { MERCURY, VENUS, EARTH, MARS, JUPITER, SATURN, URANUS, NEPTUNE } from './Content'
 
 const App = () => {
 

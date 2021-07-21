@@ -51,7 +51,7 @@ const Header = () => {
 
     return (
         <>
-            <Navbar className="header-bottom-border" sticky="top">
+            <Navbar className="header-bottom-border">
                 <div className="row">
                     <div className="col-3 col-md-12 col-lg-2 logo justify-content-md-center justify-content-lg-start">
                         <NavbarBrand href="/mercury">

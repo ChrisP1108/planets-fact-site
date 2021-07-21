@@ -15,12 +15,15 @@ const Page = ({ content }) => {
         <div className='container'>
             <div className="row">
                 <div className="col">
-                    <div>
-
+                    <div className={`Planet-${content.name}`}>
+                    </div>
+                    <div className={`Internal-${content.name}`}>
+                    </div>
+                    <div className={`Geology-${content.name}`}>
                     </div>
                 </div>
                 <div className="col">
-                    Test
+                    
                 </div>
             </div>
         </div>
