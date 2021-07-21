@@ -72,7 +72,7 @@ ul.nav {
     background-color: #070724;
     position: absolute;
     top: 0rem;
-    left: -65rem;
+    left: -68rem;
 }
 
 .mobile-chevron {
@@ -212,11 +212,11 @@ ul.nav {
 }
 
 @keyframes mobile-trans-right {
-    from {left: -65rem;}
+    from {left: -68rem;}
     to {left: 0rem;}
 }
 
 @keyframes mobile-trans-left {
     from {left: 0rem;}
-    to {left: -65rem;}
+    to {left: -68rem;}
 }
