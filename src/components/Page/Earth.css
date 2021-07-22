@@ -19,6 +19,18 @@
     transform: scale(.1913780);
 }
 
+.Select-Earth{
+    border-bottom: 0.25rem #6D2ED5 solid!important;
+    color: #ffffff;
+}
+
+.Select-Earth:hover{
+    border-bottom: 0.25rem #6D2ED5 solid!important;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .15s;
+}
+
 @media(min-width: 768px) {
     .Planet-Earth {
         transform: scale(.63334);

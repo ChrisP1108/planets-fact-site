@@ -19,10 +19,16 @@
     transform: scale(.1913780);
 }
 
-.Position-Mercury {
-    position: absolute;
-    top: 13.5rem;
-    left: 0rem;
+.Select-Mercury{
+    border-bottom: 0.25rem #419EBB solid!important;
+    color: #ffffff;
+}
+
+.Select-Mercury:hover{
+    border-bottom: 0.25rem #419EBB solid!important;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .15s;
 }
 
 @media(min-width: 768px) {

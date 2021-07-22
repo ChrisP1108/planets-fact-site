@@ -19,6 +19,18 @@
     transform: scale(.1913780);
 }
 
+.Select-Neptune{
+    border-bottom: 0.25rem #2D68F0 solid!important;
+    color: #ffffff;
+}
+
+.Select-Neptune:hover{
+    border-bottom: 0.25rem #2D68F0 solid!important;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .15s;
+}
+
 @media(min-width: 768px) {
     .Planet-Neptune {
         transform: scale(.63333);

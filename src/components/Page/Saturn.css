@@ -19,6 +19,18 @@
     transform: scale(.1913780);
 }
 
+.Select-Saturn{
+    border-bottom: 0.25rem #CD5120 solid!important;
+    color: #ffffff;
+}
+
+.Select-Saturn:hover{
+    border-bottom: 0.25rem #CD5120 solid!important;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .15s;
+}
+
 @media(min-width: 768px) {
     .Planet-Saturn {
         transform: scale(.63355);

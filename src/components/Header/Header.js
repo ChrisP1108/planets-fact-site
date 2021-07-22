@@ -32,7 +32,7 @@ const Header = () => {
 
     const mobileMapping = NAVLINKS.map(link => {
         return (
-            <div key={link.id} onClick={() => mobileNavigate(link.planet)}className={`${link.id !== NAVLINKS.length && 'mobile-border'} d-flex flex-row w-100 cursor`}>
+            <div key={link.id} onClick={() => mobileNavigate(link.planet)}className={`${link.id !== NAVLINKS.length && 'mobile-border'} d-flex flex-row w-100 cursor mobile-hover`}>
                 <span className={`mobile-${link.planet} circle my-auto`}></span>
                 <p className="mobilestyle mobile-title-margin my-auto">
                     {link.title}
@@ -44,8 +44,8 @@ const Header = () => {
 
     window.addEventListener("resize", () => {
         if (window.innerWidth > 768) {
-            setNavOpen(isNavOpen === true ? !isNavOpen : isNavOpen);
-            setClick(clicked === true ? !clicked : clicked);
+            setNavOpen(false);
+            setClick(false);
         }
     })
 

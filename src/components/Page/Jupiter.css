@@ -19,6 +19,18 @@
     transform: scale(.1913780);
 }
 
+.Select-Jupiter{
+    border-bottom: 0.25rem #D83A34 solid!important;
+    color: #ffffff;
+}
+
+.Select-Jupiter:hover{
+    border-bottom: 0.25rem #D83A34 solid!important;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .15s;
+}
+
 @media(min-width: 768px) {
     .Planet-Jupiter {
         transform: scale(.634015);

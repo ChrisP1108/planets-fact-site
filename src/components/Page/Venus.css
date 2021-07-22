@@ -19,6 +19,18 @@
     transform: scale(.1913780);
 }
 
+.Select-Venus{
+    border-bottom: 0.25rem #EDA249 solid!important;
+    color: #ffffff;
+}
+
+.Select-Venus:hover{
+    border-bottom: 0.25rem #EDA249 solid!important;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .15s;
+}
+
 @media(min-width: 768px) {
     .Planet-Venus {
         transform: scale(.6325);

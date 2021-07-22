@@ -14,7 +14,16 @@ h2 {
     text-align: center;
     margin: 0!important;
     letter-spacing: 0.188rem;
-    padding: 1.25rem 0!important
+    padding: 1.25rem 0!important;
+}
+.page span {
+    padding: 1.0925rem .2rem;
+}
+
+.mobile-hover-select:hover {
+    cursor: pointer;
+    color: #ffffff;
+    transition: .15s;
 }
 
 .side-padding {
@@ -22,22 +31,14 @@ h2 {
     padding-right: 1.5rem!important;
 }
 
-.mobile-planet-space {
-    margin-top: 27.75rem!important;
-}
-
 .bottom-border {
     border-bottom: 0.063rem #38384F solid!important;
-}
-
-.mobile-nav-margin {
-    margin: 0 1.5rem!important;
 }
 
 p {
     font-family: 'Spartan', sans-serif;
     font-size: 0.688!important;
-    font-weight: 400!important;
+    font-weight: 300!important;
     color: #ffffff!important;
 }
 
@@ -51,10 +52,6 @@ p {
 
 .no-padding {
     padding: 0!important;
-}
-
-.planet-align{
-    position: absolute;
 }
 
 @media(min-width: 768px) {

@@ -19,6 +19,18 @@
     transform: scale(.1913780);
 }
 
+.Select-Mars{
+    border-bottom: 0.25rem #D14C32 solid!important;
+    color: #ffffff;
+}
+
+.Select-Mars:hover{
+    border-bottom: 0.25rem #D14C32 solid!important;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .15s;
+}
+
 @media(min-width: 768px) {
     .Planet-Mars {
         transform: scale(.63392);
