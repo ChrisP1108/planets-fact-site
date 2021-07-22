@@ -1,13 +1,30 @@
+.page-master-container {
+    margin: 0 1.5rem!important;
+}
+
 h1 {
     font-family: 'Antonio', sans-serif;
     font-size: 2.5rem!important;
-    font-weight: 400!important
+    font-weight: 400!important;
 }
 
 h2 {
     font-family: 'Spartan', sans-serif;
     font-size: 0.563rem!important;
-    font-weight: 600!important;
+    font-weight: 700!important;
+    color:#979797;
+    text-align: center;
+    margin: 0!important;
+    letter-spacing: 0.188rem;
+    padding: 1.25rem 0!important
+}
+
+.bottom-border {
+    border-bottom: 0.063rem #38384F solid!important;
+}
+
+.mobile-nav-margin {
+    margin: 0 1.5rem!important;
 }
 
 p {
@@ -21,9 +38,16 @@ p {
     padding: 0!important;
 }
 
-.container-margin {
-    margin: 0rem 10.313rem 3.5rem!important;
+.no-margin {
+    margin: 0!important;
+}
+
+.no-padding {
     padding: 0!important;
+}
+
+.planet-align{
+    position: absolute;
 }
 
 @media(min-width: 768px) {
