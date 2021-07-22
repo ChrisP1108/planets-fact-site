@@ -13,24 +13,35 @@ import './Neptune.css';
 
 const Page = ({ content }) => {
 
+    const [reset, setReset] = useState(content.name);
     const [overview, setOverview] = useState(true);
     const [structure, setStructure] = useState(false);
     const [surface, setSurface] = useState(false);
 
     const tabActivate = tab => {
-        if (tab === 'Overview') {
-            setOverview(true);
-            setStructure(false);
-            setSurface(false);
-        } else if (tab === 'Structure') {
-            setOverview(false);
-            setStructure(true);
-            setSurface(false);
-        } else {
-            setOverview(false);
-            setSurface(true);
-            setStructure(false);
+        switch(tab) {
+            case 'Structure':
+                setOverview(false);
+                setStructure(true);
+                setSurface(false);
+                break;
+            case 'Surface':
+                setOverview(false);
+                setSurface(true);
+                setStructure(false);
+                break;
+            default:
+                setOverview(true);
+                setStructure(false);
+                setSurface(false);
+                break;
         }
+    }
+
+    if (reset !== content.name) {
+        tabActivate();
+        setReset(content.name);
+        console.log('State Reset');
     }
 
     return (
@@ -39,7 +50,7 @@ const Page = ({ content }) => {
                 <div className="col-12 no-padding bottom-border">
                     <div className="row m-0 justify-content-center">
                         <div className="col-4 p-0">
-                            <h2><span onClick={() => tabActivate('Overview')} 
+                            <h2><span onClick={() => tabActivate()} 
                                     className={`${overview && `Select-${content.name}`} mobile-hover-select`}>
                                     OVERVIEW</span></h2>
                         </div>
@@ -70,10 +81,8 @@ const Page = ({ content }) => {
                     <p>{overview ? content.overview.content : structure ? content.structure.content : content.geology.content}</p>
                 </div>
                 <div className="col-12 text-center mt-4 side-padding">
-                    <a target="_blank" href={content.overview.source}>Wikipedia</a>
+                    <a target="_blank" rel="noreferrer" href={content.overview.source}>Wikipedia</a>
                 </div>
-                {/* <div className={`Internal-${content.name}`}></div>
-                <div className={`Geology-${content.name}`}></div> */}
             </div>
         </div>
     )

@@ -28,7 +28,6 @@
     border-bottom: 0.25rem #2D68F0 solid!important;
     color: #ffffff;
     cursor: pointer;
-    transition: .15s;
 }
 
 @media(min-width: 768px) {
