@@ -29,12 +29,17 @@ const Page = ({ content }) => {
                         </div>
                     </div>
                 </div>
-                <div className="col-12">
+                <div className={`Position-${content.name} col-12`}>
                     <div className={`Planet-${content.name} mx-auto my-auto`}></div>
                 </div>
-                <div className="col-12 text-center">
+                <div className="col-12 text-center mobile-planet-space">
                     <h1>{content.name.toUpperCase()}</h1>
+                </div>
+                <div className="col-12 text-center mt-4 side-padding">
                     <p>{content.overview.content}</p>
+                </div>
+                <div className="col-12 text-center mt-4 side-padding">
+                    <a href={content.overview.source}>Wikipedia</a>
                 </div>
                 {/* <div className={`Internal-${content.name}`}></div>
                 <div className={`Geology-${content.name}`}></div> */}

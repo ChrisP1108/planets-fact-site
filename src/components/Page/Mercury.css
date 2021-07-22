@@ -19,6 +19,12 @@
     transform: scale(.1913780);
 }
 
+.Position-Mercury {
+    position: absolute;
+    top: 13.5rem;
+    left: 0rem;
+}
+
 @media(min-width: 768px) {
     .Planet-Mercury {
         transform: scale(.6344827);
