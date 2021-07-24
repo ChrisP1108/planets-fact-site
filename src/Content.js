@@ -41,6 +41,29 @@ export const NAVLINKS = [
     }
 ]
 
+export const TABDATA = [
+    {
+        id: 1,
+        title: "ROTATION TIME",
+        reference: "content.rotation"
+    },
+    {
+        id: 2,
+        title: "REVOLUTION TIME",
+        reference: "content.revolution"
+    },
+    {
+        id: 3,
+        title: "RADIUS",
+        reference: "content.radius"
+    },
+    {
+        id: 4,
+        title: "AVERAGE TEMP.",
+        reference: "content.temperature"
+    }
+]
+
 export const MERCURY = [
     {
         name: "Mercury",

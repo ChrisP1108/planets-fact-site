@@ -22,12 +22,14 @@ h3 {
     font-size: 0.75rem!important;
     font-weight: 400!important;
     color: #979797!important;
+    margin: auto!important;
 }
 
 h4 {
     font-family: 'Spartan', sans-serif;
-    font-size: .5rem!important;
-    font-weight: 700!important;
+    font-size: .55rem!important;
+    font-weight: 500!important;
+    letter-spacing: 0.046rem;
     color: #979797!important;
     margin: 0 0 0 1.5rem!important;
     padding: 0!important;
@@ -36,14 +38,14 @@ h4 {
 h5 {
     font-family: 'Antonio', sans-serif;
     font-size: 1.25rem!important;
-    font-weight: 700!important;
+    font-weight: 600!important;
     color: #ffffff!important;
     margin: 0 1.5rem 0 0!important;
     text-align: right;
     padding: 0!important;
 }
 
-.page span {
+.mobile-border-line {
     padding: 1.0925rem .2rem;
 }
 
@@ -52,6 +54,13 @@ h5 {
     font-size: 0.75rem!important;
     font-weight: 700!important;
     color: #979797!important;
+}
+
+.wiki-link {
+    background-image: url(../../assets/icon-wikipedia.svg);
+    width: 0.75rem!important;
+    height: 0.75rem!important;
+    display: inline-block;
 }
 
 .mobile-hover-select:hover {
@@ -78,6 +87,15 @@ h5 {
     margin: auto;
 }
 
+.geology-positioning {
+    position: absolute;
+    left: -50%;
+    right: -50.1%;
+    top: -8.125rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .side-padding {
     padding: 0 1.5rem 0!important;
 }
@@ -87,7 +105,7 @@ h5 {
 }
 
 .info-container {
-    margin-top: 2.313rem!important;
+    margin-top: 2.238rem!important;
     padding-bottom: 2.938rem!important;
 }
 
