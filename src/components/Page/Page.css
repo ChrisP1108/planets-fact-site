@@ -16,8 +16,42 @@ h2 {
     letter-spacing: 0.188rem;
     padding: 1.25rem 0!important;
 }
+
+h3 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.75rem!important;
+    font-weight: 400!important;
+    color: #979797!important;
+}
+
+h4 {
+    font-family: 'Spartan', sans-serif;
+    font-size: .5rem!important;
+    font-weight: 700!important;
+    color: #979797!important;
+    margin: 0 0 0 1.5rem!important;
+    padding: 0!important;
+}
+
+h5 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 1.25rem!important;
+    font-weight: 700!important;
+    color: #ffffff!important;
+    margin: 0 1.5rem 0 0!important;
+    text-align: right;
+    padding: 0!important;
+}
+
 .page span {
     padding: 1.0925rem .2rem;
+}
+
+.link a {
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.75rem!important;
+    font-weight: 700!important;
+    color: #979797!important;
 }
 
 .mobile-hover-select:hover {
@@ -35,21 +69,32 @@ h2 {
     position: relative;
 }
 
-.planet-position {
+.planet-positioning {
     position: absolute;
     left: -50%;
     right: -50%;
     bottom: 50%;
     top: 50%;
+    margin: auto;
 }
 
 .side-padding {
-    padding-left: 1.5rem!important;
-    padding-right: 1.5rem!important;
+    padding: 0 1.5rem 0!important;
 }
 
 .bottom-border {
     border-bottom: 0.063rem #38384F solid!important;
+}
+
+.info-container {
+    margin-top: 2.313rem!important;
+    padding-bottom: 2.938rem!important;
+}
+
+.info-border-box {
+    border: 0.063rem #38384F solid;
+    padding: .702rem 0 .702rem 0!important;
+    margin-bottom: .5rem;
 }
 
 p {
@@ -74,6 +119,9 @@ p {
 @media(min-width: 768px) {
     h1 {
         font-size: 3rem!important;
+    }
+    .bottom-border {
+        border-bottom: 0rem #38384f00 solid!important;
     }
 }
 

@@ -72,16 +72,58 @@ const Page = ({ content }) => {
                 </div>
                 <div className="col-12 planet-space no-padding position-relative">
                     <div className={`${overview || surface ? `Planet-${content.name}` 
-                        : `Internal-${content.name}`} planet-position my-auto mx-auto`}></div>
+                        : `Internal-${content.name}`} planet-positioning`}></div>
                 </div>
-                <div className="col-12 text-center">
+                <div className="col-12 text-center side-padding">
                     <h1>{content.name.toUpperCase()}</h1>
                 </div>
                 <div className="col-12 text-center mt-4 side-padding">
                     <p>{overview ? content.overview.content : structure ? content.structure.content : content.geology.content}</p>
                 </div>
-                <div className="col-12 text-center mt-4 side-padding">
-                    <a target="_blank" rel="noreferrer" href={content.overview.source}>Wikipedia</a>
+                <div className="col-12 text-center mt-4 side-padding link d-flex justify-content-center">
+                    <h3>Source : <a target="_blank" rel="noreferrer" href={content.overview.source}>Wikipedia</a></h3>
+                </div>
+                <div className="info-container side-padding">
+                    <div className="info-border-box">
+                        <div className="row no-padding no-margin">
+                            <div className="col-6 my-auto no-padding">
+                                <h4>ROTATION TIME</h4>
+                            </div>
+                            <div className="col-6 my-auto no-padding">
+                                <h5>{content.rotation}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="info-border-box">
+                        <div className="row no-padding no-margin">
+                            <div className="col-6 my-auto no-padding">
+                                <h4>REVOLUTION TIME</h4>
+                            </div>
+                            <div className="col-6 my-auto no-padding">
+                                <h5>{content.revolution}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="info-border-box">
+                        <div className="row no-padding no-margin">
+                            <div className="col-6 my-auto no-padding">
+                                <h4>RADIUS</h4>
+                            </div>
+                            <div className="col-6 my-auto no-padding">
+                                <h5>{content.radius}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="info-border-box">
+                        <div className="row no-padding no-margin">
+                            <div className="col-6 my-auto no-padding">
+                                <h4>AVERAGE TEMP.</h4>
+                            </div>
+                            <div className="col-6 my-auto no-padding">
+                                <h5>{content.temperature}</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
