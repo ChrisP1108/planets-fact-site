@@ -45,16 +45,16 @@ const Page = ({ content }) => {
         console.log('State Reset');
     }
     
-    const tabMapping = TABDATA.map(tab => {
+    const dataMapping = TABDATA.map(data => {
 
         return (
-            <div key={tab.id} className="info-border-box">
+            <div key={data.id} className="info-border-box">
                 <div className="row no-padding no-margin">
                     <div className="col-6 my-auto no-padding">
-                        <h4>{tab.title}</h4>
+                        <h4>{data.title}</h4>
                     </div>
                     <div className="col-6 my-auto no-padding">
-                        <h5>{eval(tab.reference)}</h5>
+                        <h5>{eval(data.reference)}</h5>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@ const Page = ({ content }) => {
         <div className="page">
             <div className="row no-margin">
                 <div className="col-12 no-padding bottom-border">
-                    <div className="row m-0 justify-content-center">
+                    <div className="row m-0 justify-content-center position-sticky">
                         <div className="col-4 p-0">
                             <h2><span onClick={() => tabActivate()} 
                                     className={`${overview && `Select-${content.name}`} mobile-hover-select mobile-border-line`}>
@@ -102,13 +102,15 @@ const Page = ({ content }) => {
                     <p>{overview ? content.overview.content : structure ? content.structure.content : content.geology.content}</p>
                 </div>
                 <div className="col-12 text-center mt-4 side-padding link d-flex justify-content-center">
-                    <h3>Source : <a target="_blank" rel="noreferrer" href={content.overview.source}>Wikipedia 
-                        <span className="wiki-link"></span>
-                        </a>
-                    </h3> 
+                    <h3>Source : <a target="_blank" rel="noreferrer" 
+                        href={content.overview.source}>Wikipedia</a>
+                    </h3>
+                    <a className="wiki-link my-auto" rel="noreferrer" 
+                        target="_blank" href={content.overview.source}>
+                    </a>
                 </div>
                 <div className="info-container side-padding">
-                    {tabMapping}
+                    {dataMapping}
                 </div>
             </div>
         </div>

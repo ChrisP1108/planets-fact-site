@@ -9,6 +9,7 @@ const Header = () => {
 
     const [isNavOpen, setNavOpen] = useState(false);
     const [clicked, setClick] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
     const history = useHistory();
 
@@ -47,11 +48,16 @@ const Header = () => {
             setNavOpen(false);
             setClick(false);
         }
-    })
+    });
+
+    window.addEventListener("scroll", () => {
+        window.scrollY > 1 ? setScrolled(true) : setScrolled(false);
+
+    });
 
     return (
         <>
-            <Navbar className="header-bottom-border" sticky="top">
+            <Navbar className={`${scrolled && `header-background`} header-bottom-border`} sticky="top">
                 <div className="row">
                     <div className="col-3 col-md-12 col-lg-2 logo justify-content-md-center justify-content-lg-start">
                         <NavbarBrand href="/mercury">

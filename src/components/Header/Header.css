@@ -14,6 +14,7 @@ a.navbar-brand {
 
 .header-background {
     background-color: #070724;
+    transition: .15s ease-in-out;
 }
 
 .header-bottom-border {
