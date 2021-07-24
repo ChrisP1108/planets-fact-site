@@ -42,6 +42,7 @@ const Page = ({ content }) => {
     if (reset !== content.name) {
         tabActivate();
         setReset(content.name);
+        window.scrollTo(0, 0);
         console.log('State Reset');
     }
     
