@@ -1,25 +1,16 @@
-/* Antonio Font font-family: 'Antonio', sans-serif;'Antonio' */
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500;700&display=swap');
-
-/* Spartan Font - font-family: 'Spartan', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
-
 /* * {
   border: 1px red solid;
 } */
 
+/* Antonio Font font-family: 'Antonio', sans-serif;'Antonio' */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
+
+/* Spartan Font - font-family: 'Spartan', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .main-background {
   color: #ffffff;
-  padding-bottom: 100rem;
   background-color: #070724;
   background-image: url(./assets/background-stars.svg);
   background-size: cover;
-}
-
-.font-antonio {
-  font-family: 'Antonio', sans-serif;
-}
-
-.font-spartan {
-  font-family: 'Spartan', sans-serif;
 }

@@ -7,16 +7,18 @@ a.navbar-brand {
     margin: 0;
     padding: 0;
     font-size: 1.75rem;
+    font-weight: 600;
     color: #ffffff;
     text-decoration: none;
 }
 
 .header-background {
     background-color: #070724;
+    transition: .15s ease-in-out;
 }
 
 .header-bottom-border {
-    border-bottom: 1px #38384F solid;
+    border-bottom: 0.063rem #38384F solid;
 }
 
 nav {
@@ -32,14 +34,16 @@ ul.nav {
     color: #bbbbbb!important;
     font-family: 'Spartan', sans-serif;
     font-size: 0.688rem;
+    font-weight: 600!important;
     padding: 2.032rem 0.03125rem!important;
-    border-top: 4px #419ebb00 solid!important;
+    border-top: 0.25rem #419ebb00 solid!important;
 }
 
 .mobilestyle {
     color: #ffffff;
     font-family: 'Spartan', sans-serif;
     font-size: 0.938rem;
+    font-weight: 600!important;
     padding: 1.344rem 0!important;
 }
 
@@ -48,15 +52,15 @@ ul.nav {
 }
 
 .circle {
-    height: 20px!important;
-    width: 20px!important;
+    height: 1.25rem!important;
+    width: 1.25rem!important;
     background-color: #bbb;
     border-radius: 50%;
     display: block;
 }
 
 .mobile-border {
-    border-bottom: 1px #242433 solid;
+    border-bottom: 0.063rem #242433 solid;
 }
 
 .mobile-margin {
@@ -72,13 +76,20 @@ ul.nav {
     background-color: #070724;
     position: absolute;
     top: 0rem;
-    left: -65rem;
+    left: -68rem;
+    z-index: 1;
+}
+
+.mobile-hover:hover {
+    background-color: #5f5f5f3b;
+    transition: .15s ease-in-out;
+    padding-left: .5rem;
 }
 
 .mobile-chevron {
     background-image: url(../../assets/icon-chevron.svg);
-    width: 6px!important;
-    height: 8px!important;
+    width: 0.375rem!important;
+    height: 0.5rem!important;
     transform: scale(1.2);
     margin-left: auto;
     margin-right: .5rem;
@@ -117,35 +128,35 @@ ul.nav {
 }
 
 .mercury:hover {
-    border-top: 4px #419EBB solid!important;
+    border-top: 0.25rem #419EBB solid!important;
 }
 
 .venus:hover {
-    border-top: 4px #EDA249 solid!important;
+    border-top: 0.25rem #EDA249 solid!important;
 }
 
 .earth:hover {
-    border-top: 4px #6D2ED5 solid!important;
+    border-top: 0.25rem #6D2ED5 solid!important;
 }
 
 .mars:hover {
-    border-top: 4px #D14C32 solid!important;
+    border-top: 0.25rem #D14C32 solid!important;
 }
 
 .jupiter:hover {
-    border-top: 4px #D83A34 solid!important;
+    border-top: 0.25rem #D83A34 solid!important;
 }
 
 .saturn:hover {
-    border-top: 4px #CD5120 solid!important;
+    border-top: 0.25rem #CD5120 solid!important;
 }
 
 .uranus:hover {
-    border-top: 4px #1EC1A2 solid!important;
+    border-top: 0.25rem #1EC1A2 solid!important;
 }
 
 .neptune:hover {
-    border-top: 4px #2D68F0 solid!important;
+    border-top: 0.25rem #2D68F0 solid!important;
 }
 
 .navbar-collapse {
@@ -168,15 +179,15 @@ ul.nav {
 
 .hamburger {
     background-image: url(../../assets/icon-hamburger.svg);
-    width: 24px!important;
-    height: 17px!important;
+    width: 1.5rem!important;
+    height: 1.063rem!important;
     transition: .15s;
 }
 
 .hamburger-active {
     background-image: url(../../assets/icon-hamburger-active.svg);
-    width: 24px!important;
-    min-height: 17px!important;
+    width: 1.5rem!important;
+    min-height: 1.063rem!important;
     transition: .15s;
 }
 
@@ -200,23 +211,23 @@ ul.nav {
 }
 
 .mobile-trans-on {
-    animation-name: mobile-trans-right;
-    animation-duration: .5s;
+    animation-name: mobile-trans-in;
+    animation-duration: .25s;
     animation-fill-mode: forwards;
 }
 
 .mobile-trans-off {
-    animation-name: mobile-trans-left;
-    animation-duration: .5s;
+    animation-name: mobile-trans-out;
+    animation-duration: .25s;
     animation-fill-mode: forwards;
 }
 
-@keyframes mobile-trans-right {
-    from {left: -65rem;}
+@keyframes mobile-trans-in {
+    from {left: -68rem;}
     to {left: 0rem;}
 }
 
-@keyframes mobile-trans-left {
+@keyframes mobile-trans-out {
     from {left: 0rem;}
-    to {left: -65rem;}
+    to {left: -68rem;}
 }

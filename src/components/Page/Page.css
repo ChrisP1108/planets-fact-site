@@ -1,0 +1,152 @@
+h1 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 2.5rem!important;
+    font-weight: 400!important;
+    margin: 0!important;
+    padding: 0!important;
+}
+
+h2 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.563rem!important;
+    font-weight: 700!important;
+    color:#979797;
+    text-align: center;
+    margin: 0!important;
+    letter-spacing: 0.188rem;
+    padding: 1.25rem 0!important;
+}
+
+h3 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.75rem!important;
+    font-weight: 400!important;
+    color: #979797!important;
+    margin: 0!important;
+}
+
+h4 {
+    font-family: 'Spartan', sans-serif;
+    font-size: .5rem!important;
+    font-weight: 500!important;
+    letter-spacing: 0.046rem;
+    color: #979797!important;
+    margin: 0 0 0 1.5rem!important;
+    padding: 0!important;
+}
+
+h5 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 1.25rem!important;
+    font-weight: 600!important;
+    color: #ffffff!important;
+    margin: 0 1.5rem 0 0!important;
+    text-align: right;
+    padding: 0!important;
+}
+
+.mobile-border-line {
+    padding: 1.0925rem .2rem;
+}
+
+.link a {
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.75rem!important;
+    font-weight: 700!important;
+    color: #979797!important;
+}
+
+.wiki-link {
+    background-image: url(../../assets/icon-wikipedia.svg);
+    width: 0.75rem!important;
+    height: 0.75rem!important;
+    display: inline-block;
+    margin-left: .25rem!important;
+}
+
+.mobile-hover-select:hover {
+    cursor: pointer;
+    color: #ffffff;
+    transition: .15s;
+}
+
+.planet-space {
+    margin: 9.688rem 0!important;
+    /* margin-bottom: 19.375rem!important; */
+}
+
+.position-relative {
+    position: relative;
+}
+
+.planet-positioning {
+    position: absolute;
+    left: -50%;
+    right: -50%;
+    bottom: 50%;
+    top: 50%;
+    margin: auto;
+}
+
+.geology-positioning {
+    position: absolute;
+    left: -50%;
+    right: -50.1%;
+    top: -8.125rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.side-padding {
+    padding: 0 1.5rem 0!important;
+}
+
+.bottom-border {
+    border-bottom: 0.063rem #38384F solid!important;
+}
+
+.info-container {
+    margin-top: 2.238rem!important;
+    padding-bottom: 2.938rem!important;
+}
+
+.info-border-box {
+    border: 0.063rem #38384F solid;
+    padding: .702rem 0 .702rem 0!important;
+    margin-bottom: .5rem;
+}
+
+p {
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.688!important;
+    font-weight: 300!important;
+    color: #ffffff!important;
+}
+
+.col {
+    padding: 0!important;
+}
+
+.no-margin {
+    margin: 0!important;
+}
+
+.no-padding {
+    padding: 0!important;
+}
+
+@media(min-width: 768px) {
+    h1 {
+        font-size: 3rem!important;
+    }
+    .bottom-border {
+        border-bottom: 0rem #38384f00 solid!important;
+    }
+}
+
+@media(min-width: 992px) {
+    h1 {
+        font-size: 5rem!important;
+    }
+}
+

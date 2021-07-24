@@ -1,0 +1,55 @@
+.Planet-Neptune {
+    background-image: url(../../assets/planet-neptune.svg);
+    width: 28.125rem!important;
+    height: 28.125rem!important;
+    transform: scale(.38444);
+}
+
+.Internal-Neptune {
+    background-image: url(../../assets/planet-neptune-internal.svg);
+    width: 28.125rem!important;
+    height: 28.125rem!important;
+    transform: scale(.38444);
+}
+
+.Geology-Neptune {
+    background-image: url(../../assets/geology-neptune.png);
+    width: 20.375rem!important;
+    height: 24.875rem!important;
+    transform: scale(.1913780);
+}
+
+.Select-Neptune{
+    border-bottom: 0.25rem #2D68F0 solid!important;
+    color: #ffffff;
+}
+
+.Select-Neptune:hover{
+    border-bottom: 0.25rem #2D68F0 solid!important;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    .Planet-Neptune {
+        transform: scale(.63333);
+    }
+    .Internal-Neptune {
+        transform: scale(.63333);
+    }
+    .Geology-Neptune {
+        transform: scale(.31724135);
+    }
+}
+
+@media(min-width: 992px) {
+    .Planet-Neptune {
+        transform: scale(1);
+    }
+    .Internal-Neptune {
+        transform: scale(1);
+    }
+    .Geology-Neptune {
+        transform: scale(.5);
+    }
+}

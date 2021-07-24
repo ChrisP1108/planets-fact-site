@@ -1,0 +1,55 @@
+.Planet-Earth {
+    background-image: url(../../assets/planet-earth.svg);
+    width: 28.125rem!important;
+    height: 28.125rem!important;
+    transform: scale(.38445);
+}
+
+.Internal-Earth {
+    background-image: url(../../assets/planet-earth-internal.svg);
+    width: 28.125rem!important;
+    height: 28.125rem!important;
+    transform: scale(.38445);
+}
+
+.Geology-Earth {
+    background-image: url(../../assets/geology-earth.png);
+    width: 20.375rem!important;
+    height: 24.875rem!important;
+    transform: scale(.1913780);
+}
+
+.Select-Earth{
+    border-bottom: 0.25rem #6D2ED5 solid!important;
+    color: #ffffff;
+}
+
+.Select-Earth:hover{
+    border-bottom: 0.25rem #6D2ED5 solid!important;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    .Planet-Earth {
+        transform: scale(.63334);
+    }
+    .Internal-Earth {
+        transform: scale(.63334);
+    }
+    .Geology-Earth {
+        transform: scale(.31724135);
+    }
+}
+
+@media(min-width: 992px) {
+    .Planet-Earth {
+        transform: scale(1);
+    }
+    .Internal-Earth {
+        transform: scale(1);
+    }
+    .Geology-Earth {
+        transform: scale(.5);
+    }
+}
