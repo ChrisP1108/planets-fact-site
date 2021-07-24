@@ -26,6 +26,23 @@ h2 {
     transition: .15s;
 }
 
+.planet-space {
+    margin: 9.688rem 0!important;
+    /* margin-bottom: 19.375rem!important; */
+}
+
+.position-relative {
+    position: relative;
+}
+
+.planet-position {
+    position: absolute;
+    left: -50%;
+    right: -50%;
+    bottom: 50%;
+    top: 50%;
+}
+
 .side-padding {
     padding-left: 1.5rem!important;
     padding-right: 1.5rem!important;

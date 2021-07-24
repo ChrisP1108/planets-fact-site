@@ -10,20 +10,7 @@
 
 .main-background {
   color: #ffffff;
-  padding-bottom: 100rem;
   background-color: #070724;
   background-image: url(./assets/background-stars.svg);
   background-size: cover;
-}
-
-@media(min-width: 768px) {
-  .page-master-container {
-    margin: 0 2.438rem!important
-  }
-}
-
-@media(min-width: 992px) {
-  .page-master-container {
-    margin: 0 2.0rem!important
-  }
 }

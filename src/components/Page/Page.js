@@ -70,11 +70,11 @@ const Page = ({ content }) => {
                         </div>
                     </div>
                 </div>
-                <div className="col-12">
+                <div className="col-12 planet-space no-padding position-relative">
                     <div className={`${overview || surface ? `Planet-${content.name}` 
-                        : `Internal-${content.name}`} mx-auto my-auto`}></div>
+                        : `Internal-${content.name}`} planet-position my-auto mx-auto`}></div>
                 </div>
-                <div className="col-12 text-center mobile-planet-space">
+                <div className="col-12 text-center">
                     <h1>{content.name.toUpperCase()}</h1>
                 </div>
                 <div className="col-12 text-center mt-4 side-padding">
