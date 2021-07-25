@@ -47,7 +47,6 @@ const Page = ({ content }) => {
     }
     
     const dataMapping = TABDATA.map(data => {
-
         return (
             <div key={data.id} className="info-border-box">
                 <div className="row no-padding no-margin">

@@ -23,6 +23,14 @@ const Header = () => {
         setNavOpen(!isNavOpen);
     }
 
+    if (isNavOpen) {
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'instant'
+        });  
+    } 
+
     const navMapping = NAVLINKS.map(link => {
         return (
             <NavItem key={link.id}>

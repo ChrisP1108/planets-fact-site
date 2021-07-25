@@ -14,3 +14,7 @@
   background-image: url(./assets/background-stars.svg);
   background-size: cover;
 }
+
+body {
+  transition: 0s;
+}
