@@ -138,9 +138,19 @@ p {
 @media(min-width: 768px) {
     h1 {
         font-size: 3rem!important;
+        text-align: left!important;
+    }
+    p {
+        text-align: left!important;
     }
     .bottom-border {
         border-bottom: 0rem #38384f00 solid!important;
+    }
+    h4 {
+        margin: 0!important;
+    }
+    h5 {
+        text-align: left!important;
     }
 }
 

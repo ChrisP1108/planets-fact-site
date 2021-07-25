@@ -50,10 +50,10 @@ const Page = ({ content }) => {
         return (
             <div key={data.id} className="info-border-box">
                 <div className="row no-padding no-margin">
-                    <div className="col-6 my-auto no-padding">
+                    <div className="col-6 col-md-12 my-auto no-padding">
                         <h4>{data.title}</h4>
                     </div>
-                    <div className="col-6 my-auto no-padding">
+                    <div className="col-6 col-md-12 my-auto no-padding">
                         <h5>{eval(data.reference)}</h5>
                     </div>
                 </div>
@@ -64,21 +64,21 @@ const Page = ({ content }) => {
     return (
         <div className="page">
             <div className="row no-margin">
-                <div className="col-12 no-padding bottom-border">
+                <div className="col-12 col-md-6 no-padding bottom-border order-md-3">
                     <div className="row m-0 justify-content-center position-sticky">
-                        <div className="col-4 p-0">
+                        <div className="col-4 col-md-12 p-0">
                             <h2><span onClick={() => tabActivate()} 
                                     className={`${overview && `Select-${content.name}`} mobile-hover-select mobile-border-line`}>
                                     OVERVIEW</span></h2>
                         </div>
-                        <div className="col-4 p-0">
+                        <div className="col-4 col-md-12 p-0">
                             <h2 className={`d-block d-md-none mobile-hover-select`}>
                                 <span onClick={() => tabActivate('Structure')}
                                     className={`${structure && `Select-${content.name}`} mobile-hover-select mobile-border-line`}>
                                     STRUCTURE</span></h2>
                             <h2 className={`d-none d-md-block`}>INTERNAL STRUCTURE</h2>
                         </div>
-                        <div className="col-4 p-0">
+                        <div className="col-4 col-md-12 p-0">
                             <h2 className={`d-block d-md-none mobile-hover-select`}>
                                 <span onClick={() => tabActivate('Surface')}
                                     className={`${surface && `Select-${content.name}`} mobile-hover-select mobile-border-line`}>
@@ -87,7 +87,7 @@ const Page = ({ content }) => {
                         </div>
                     </div>
                 </div>
-                <div className="col-12 planet-space no-padding position-relative">
+                <div className="col-12 planet-space no-padding position-relative order-md-1">
                     <div className={`${overview || surface ? `Planet-${content.name}` 
                         : `Internal-${content.name}`} planet-positioning`}>
                     </div>
@@ -95,13 +95,15 @@ const Page = ({ content }) => {
                         : `d-none`} geology-positioning`}>
                     </div>
                 </div>
-                <div className="col-12 text-center side-padding">
-                    <h1>{content.name.toUpperCase()}</h1>
+                <div className="col-md-6 order-md-2">
+                    <div className="col-12 text-center text-md-center side-padding">
+                        <h1>{content.name.toUpperCase()}</h1>
+                    </div>
+                    <div className="col-12 text-center mt-4 side-padding">
+                        <p>{overview ? content.overview.content : structure ? content.structure.content : content.geology.content}</p>
+                    </div>
                 </div>
-                <div className="col-12 text-center mt-4 side-padding">
-                    <p>{overview ? content.overview.content : structure ? content.structure.content : content.geology.content}</p>
-                </div>
-                <div className="col-12 text-center mt-4 side-padding link d-flex justify-content-center">
+                <div className="col-12 col-md-6 text-center mt-4 side-padding link d-flex justify-content-center order-md-3">
                     <h3>Source : <a target="_blank" rel="noreferrer" 
                         href={content.overview.source}>Wikipedia</a>
                     </h3>
@@ -109,7 +111,7 @@ const Page = ({ content }) => {
                         target="_blank" href={content.overview.source}>
                     </a>
                 </div>
-                <div className="info-container side-padding">
+                <div className="info-container side-padding order-md-4">
                     {dataMapping}
                 </div>
             </div>
