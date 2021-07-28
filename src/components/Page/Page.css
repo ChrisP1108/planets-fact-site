@@ -45,6 +45,22 @@ h5 {
     padding: 0!important;
 }
 
+h6 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 0.563rem!important;
+    font-weight: 700!important;
+    color:#979797;
+    text-align: center;
+    margin: 0!important;
+    padding: 1.25rem 0!important;
+}
+
+.tab-number-format {
+    margin-left: 1.75rem!important;
+    margin-right: 1.938rem!important;
+    color: #979797;
+}
+
 .mobile-border-line {
     padding: 1.0925rem .2rem;
 }
@@ -72,7 +88,6 @@ h5 {
 
 .planet-space {
     margin: 9.688rem 0!important;
-    /* margin-bottom: 19.375rem!important; */
 }
 
 .position-relative {
@@ -101,6 +116,10 @@ h5 {
     padding: 0 1.5rem 0!important;
 }
 
+.source-padding {
+    padding: 0 1.5rem 0!important;
+}
+
 .bottom-border {
     border-bottom: 0.063rem #38384F solid!important;
 }
@@ -114,6 +133,10 @@ h5 {
     border: 0.063rem #38384F solid;
     padding: .702rem 0 .702rem 0!important;
     margin-bottom: .5rem;
+}
+
+.tab-border-box {
+    border: 0;
 }
 
 p {
@@ -140,6 +163,11 @@ p {
         font-size: 3rem!important;
         text-align: left!important;
     }
+    h2 {
+        color: #ffffff;
+        letter-spacing: 0.121rem!important;
+        text-align: left;
+    }
     p {
         text-align: left!important;
     }
@@ -151,6 +179,29 @@ p {
     }
     h5 {
         text-align: left!important;
+    }
+    .planet-space {
+        margin: 14.475rem 0!important;
+    }
+    .tabs-top-margin {
+        margin-top: 3.5rem !important;
+    }
+    .tab-border-box {
+        border: 0.063rem #38384F solid;
+        padding: .126065rem 0 .126065rem 0!important;
+        margin-bottom: 1.063rem;
+        cursor: pointer;
+    }
+    .geology-positioning {
+        position: absolute;
+        left: -50%;
+        right: -50.1%;
+        top: -5.225rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .source-padding {
+        padding: 0 2.25rem 0!important;
     }
 }
 

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { TABDATA } from '../../Content';
+import { TABS, INFODATA } from '../../Content';
 
 import '../../App.css';
 import './Page.css';
@@ -21,12 +21,12 @@ const Page = ({ content }) => {
 
     const tabActivate = tab => {
         switch(tab) {
-            case 'Structure':
+            case 'structure':
                 setOverview(false);
                 setStructure(true);
                 setSurface(false);
                 break;
-            case 'Surface':
+            case 'surface':
                 setOverview(false);
                 setSurface(true);
                 setStructure(false);
@@ -45,8 +45,24 @@ const Page = ({ content }) => {
         window.scrollTo(0, 0);
         console.log('State Reset');
     }
+
+    const tabMapping = TABS.map(tab => {
+        return (
+            <div key={tab.id} onClick={() => tabActivate(tab.name)} 
+                className={`${eval(tab.name) && `${content.name}-Border-Fill`} ${content.name}-Border-Box tab-border-box col-4 col-md-12`}>
+                <h2 className={`d-block d-md-none mobile-hover-select`}>
+                    <span 
+                        className={`${eval(tab.name) && `Select-${content.name}`} mobile-border-line`}>
+                        {tab.mobileName}</span></h2>
+                <div className="d-none d-md-flex">
+                    <h2 className="tab-number-format">{`0${tab.id}`}</h2>
+                    <h2>{tab.regularName}</h2>
+                </div>
+            </div>
+        );
+    });
     
-    const dataMapping = TABDATA.map(data => {
+    const dataMapping = INFODATA.map(data => {
         return (
             <div key={data.id} className="info-border-box">
                 <div className="row no-padding no-margin">
@@ -64,27 +80,9 @@ const Page = ({ content }) => {
     return (
         <div className="page">
             <div className="row no-margin">
-                <div className="col-12 col-md-6 no-padding bottom-border order-md-3">
+                <div className="col-12 col-md-6 no-padding bottom-border order-md-3 tabs-top-margin">
                     <div className="row m-0 justify-content-center position-sticky">
-                        <div className="col-4 col-md-12 p-0">
-                            <h2><span onClick={() => tabActivate()} 
-                                    className={`${overview && `Select-${content.name}`} mobile-hover-select mobile-border-line`}>
-                                    OVERVIEW</span></h2>
-                        </div>
-                        <div className="col-4 col-md-12 p-0">
-                            <h2 className={`d-block d-md-none mobile-hover-select`}>
-                                <span onClick={() => tabActivate('Structure')}
-                                    className={`${structure && `Select-${content.name}`} mobile-hover-select mobile-border-line`}>
-                                    STRUCTURE</span></h2>
-                            <h2 className={`d-none d-md-block`}>INTERNAL STRUCTURE</h2>
-                        </div>
-                        <div className="col-4 col-md-12 p-0">
-                            <h2 className={`d-block d-md-none mobile-hover-select`}>
-                                <span onClick={() => tabActivate('Surface')}
-                                    className={`${surface && `Select-${content.name}`} mobile-hover-select mobile-border-line`}>
-                                    SURFACE</span></h2>
-                            <h2 className={`d-none d-md-block`}>SURFACE GEOLOGY</h2>
-                        </div>
+                        {tabMapping}
                     </div>
                 </div>
                 <div className="col-12 planet-space no-padding position-relative order-md-1">
@@ -103,7 +101,7 @@ const Page = ({ content }) => {
                         <p>{overview ? content.overview.content : structure ? content.structure.content : content.geology.content}</p>
                     </div>
                 </div>
-                <div className="col-12 col-md-6 text-center mt-4 side-padding link d-flex justify-content-center order-md-3">
+                <div className="col-12 col-md-12 mt-4 source-padding link d-flex justify-content-center justify-content-md-start link-regular-spacing order-md-3">
                     <h3>Source : <a target="_blank" rel="noreferrer" 
                         href={content.overview.source}>Wikipedia</a>
                     </h3>

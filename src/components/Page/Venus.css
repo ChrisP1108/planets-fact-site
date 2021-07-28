@@ -40,6 +40,12 @@
     .Geology-Venus {
         transform: scale(.31724135);
     }
+    .Venus-Border-Box:hover {
+        border: 0.063rem #EDA249 solid !important;
+    }
+    .Venus-Border-Fill {
+        background-color: #EDA249;
+    }
 }
 
 @media(min-width: 992px) {

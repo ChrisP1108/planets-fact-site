@@ -40,6 +40,12 @@
     .Geology-Uranus {
         transform: scale(.31724135);
     }
+    .Uranus-Border-Box:hover {
+        border: 0.063rem #1EC1A2 solid !important;
+    }
+    .Uranus-Border-Fill {
+        background-color: #1EC1A2;
+    }
 }
 
 @media(min-width: 992px) {

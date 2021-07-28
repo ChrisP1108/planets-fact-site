@@ -40,6 +40,12 @@
     .Geology-Saturn {
         transform: scale(.31724135);
     }
+    .Saturn-Border-Box:hover {
+        border: 0.063rem #CD5120 solid !important;
+    }
+    .Saturn-Border-Fill {
+        background-color: #CD5120;
+    }
 }
 
 @media(min-width: 992px) {
