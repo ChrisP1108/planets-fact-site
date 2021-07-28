@@ -40,9 +40,6 @@
     .Geology-Uranus {
         transform: scale(.31724135);
     }
-    .Uranus-Border-Box:hover {
-        border: inherit #1EC1A2 solid !important;
-    }
     .Uranus-Border-Fill {
         background-color: #1EC1A2;
     }

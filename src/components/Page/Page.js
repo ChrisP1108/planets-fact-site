@@ -48,8 +48,9 @@ const Page = ({ content }) => {
 
     const tabMapping = TABS.map(tab => {
         return (
-            <div key={tab.id} onClick={() => tabActivate(tab.name)} 
-                className={`${eval(tab.name) ? `${content.name}-Border-Fill` : `tab-border-box`} ${content.name}-Border-Box tab-format col-4 tab-width`}>
+            <div key={tab.id} onClick={() => tabActivate(tab.name)}  
+                className={`${eval(tab.name) ? `${content.name}-Border-Fill` : `tab-border-box`} 
+                            tab-format col-4 ${content.name}-Text-Hover`}>
                 <h2 className={`d-block d-md-none mobile-hover-select`}>
                     <span 
                         className={`${eval(tab.name) && `Select-${content.name}`} mobile-border-line`}>
@@ -80,7 +81,7 @@ const Page = ({ content }) => {
     return (
         <div className="page">
             <div className="row no-margin">
-                <div className="col-12 col-md-6 no-padding bottom-border order-md-3 tabs-container-top-margin">
+                <div className="col-12 col-md-6 bottom-border order-md-3 tabs-container-top-margin ml-md-1 tab-padding">
                     <div className="row m-0">
                         {tabMapping}
                     </div>
@@ -93,7 +94,7 @@ const Page = ({ content }) => {
                         : `d-none`} geology-positioning`}>
                     </div>
                 </div>
-                <div className="col-md-6 order-md-2">
+                <div className="col-md-6 order-md-2 p-md-0">
                     <div className="col-12 text-center text-md-center side-padding">
                         <h1>{content.name.toUpperCase()}</h1>
                     </div>

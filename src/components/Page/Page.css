@@ -184,14 +184,16 @@ p {
     }
     .tab-format {
         padding: .126065rem 0 .126065rem 0!important;
-        margin: 0 0 1.063rem 3.5rem!important;
+        margin-bottom: 1.063rem!important;
+        width: 100%!important;
         cursor: pointer;
     }
     .tab-border-box {
         border: 0.063rem #38384F solid;
     }
-    .tab-width {
-        width: 80%!important;
+    .tab-border-box:hover {
+        background-color: #5f5f5f3b;
+        transition: .15s ease-in-out;
     }
     .geology-positioning {
         position: absolute;
@@ -202,7 +204,13 @@ p {
         margin-right: auto;
     }
     .source-padding {
-        padding: 0 2.25rem 0!important;
+        padding: 0 2.5rem 0!important;
+    }
+    .side-padding {
+        padding: 0 2.5rem 0!important;
+    }
+    .tab-padding {
+        padding: 0 2.5rem 0 4rem!important;
     }
 }
 

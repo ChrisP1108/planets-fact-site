@@ -40,9 +40,6 @@
     .Geology-Mercury {
         transform: scale(.31724135);
     }
-    .Mercury-Border-Box:hover {
-        border: inherit #419EBB solid!important;
-    }
     .Mercury-Border-Fill {
         background-color: #419EBB;
     }

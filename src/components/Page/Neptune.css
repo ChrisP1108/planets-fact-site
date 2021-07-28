@@ -40,9 +40,6 @@
     .Geology-Neptune {
         transform: scale(.31724135);
     }
-    .Neptune-Border-Box:hover {
-        border: inherit #2D68F0 solid !important;
-    }
     .Neptune-Border-Fill {
         background-color: #2D68F0;
     }

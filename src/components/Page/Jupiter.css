@@ -40,9 +40,6 @@
     .Geology-Jupiter {
         transform: scale(.31724135);
     }
-    .Jupiter-Border-Box:hover {
-        border: inherit #D83A34 solid !important;
-    }
     .Jupiter-Border-Fill {
         background-color: #D83A34;
     }

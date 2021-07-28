@@ -40,9 +40,6 @@
     .Geology-Venus {
         transform: scale(.31724135);
     }
-    .Venus-Border-Box:hover {
-        border: inherit #EDA249 solid !important;
-    }
     .Venus-Border-Fill {
         background-color: #EDA249;
     }
