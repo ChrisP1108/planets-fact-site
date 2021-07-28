@@ -41,7 +41,7 @@
         transform: scale(.31724135);
     }
     .Earth-Border-Box:hover {
-        border: 0.063rem #6D2ED5 solid !important;
+        border: inherit #6D2ED5 solid !important;
     }
     .Earth-Border-Fill {
         background-color: #6D2ED5;

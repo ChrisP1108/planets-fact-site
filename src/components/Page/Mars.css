@@ -41,7 +41,7 @@
         transform: scale(.31724135);
     }
     .Mars-Border-Box:hover {
-        border: 0.063rem #D14C32 solid !important;
+        border: inherit #D14C32 solid !important;
     }
     .Mars-Border-Fill {
         background-color: #D14C32;

@@ -56,8 +56,8 @@ h6 {
 }
 
 .tab-number-format {
-    margin-left: 1.75rem!important;
-    margin-right: 1.938rem!important;
+    margin-left: 1.25rem!important;
+    margin-right: 1.1875rem!important;
     color: #979797;
 }
 
@@ -135,10 +135,6 @@ h6 {
     margin-bottom: .5rem;
 }
 
-.tab-border-box {
-    border: 0;
-}
-
 p {
     font-family: 'Spartan', sans-serif;
     font-size: 0.688!important;
@@ -183,14 +179,19 @@ p {
     .planet-space {
         margin: 14.475rem 0!important;
     }
-    .tabs-top-margin {
-        margin-top: 3.5rem !important;
+    .tabs-container-top-margin{
+        margin-top: 3.5rem!important;
+    }
+    .tab-format {
+        padding: .126065rem 0 .126065rem 0!important;
+        margin: 0 0 1.063rem 3.5rem!important;
+        cursor: pointer;
     }
     .tab-border-box {
         border: 0.063rem #38384F solid;
-        padding: .126065rem 0 .126065rem 0!important;
-        margin-bottom: 1.063rem;
-        cursor: pointer;
+    }
+    .tab-width {
+        width: 80%!important;
     }
     .geology-positioning {
         position: absolute;

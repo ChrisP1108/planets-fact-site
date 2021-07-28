@@ -41,7 +41,7 @@
         transform: scale(.31724135);
     }
     .Mercury-Border-Box:hover {
-        border: 0.063rem #419EBB solid !important;
+        border: inherit #419EBB solid!important;
     }
     .Mercury-Border-Fill {
         background-color: #419EBB;

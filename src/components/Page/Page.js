@@ -49,7 +49,7 @@ const Page = ({ content }) => {
     const tabMapping = TABS.map(tab => {
         return (
             <div key={tab.id} onClick={() => tabActivate(tab.name)} 
-                className={`${eval(tab.name) && `${content.name}-Border-Fill`} ${content.name}-Border-Box tab-border-box col-4 col-md-12`}>
+                className={`${eval(tab.name) ? `${content.name}-Border-Fill` : `tab-border-box`} ${content.name}-Border-Box tab-format col-4 tab-width`}>
                 <h2 className={`d-block d-md-none mobile-hover-select`}>
                     <span 
                         className={`${eval(tab.name) && `Select-${content.name}`} mobile-border-line`}>
@@ -80,8 +80,8 @@ const Page = ({ content }) => {
     return (
         <div className="page">
             <div className="row no-margin">
-                <div className="col-12 col-md-6 no-padding bottom-border order-md-3 tabs-top-margin">
-                    <div className="row m-0 justify-content-center position-sticky">
+                <div className="col-12 col-md-6 no-padding bottom-border order-md-3 tabs-container-top-margin">
+                    <div className="row m-0">
                         {tabMapping}
                     </div>
                 </div>
