@@ -55,7 +55,7 @@ h6 {
 }
 
 .mobile-border-line {
-    padding: 1.0925rem .2rem;
+    padding: 1.0925rem .2rem!important;
 }
 
 .mobile-hover-select:hover {

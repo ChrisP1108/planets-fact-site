@@ -90,8 +90,8 @@ const Page = ({ content }) => {
         <div className="page">
             <div className="row no-margin">
                 <div className="col-12 col-md-6 bottom-border order-md-3 tabs-container-top-margin 
-                    ml-md-1 tab-padding d-xl-none">
-                    <div className="row m-0">
+                    tab-padding d-xl-none">
+                    <div className="row no-margin">
                         {tabMapping}
                     </div>
                 </div>
@@ -120,12 +120,12 @@ const Page = ({ content }) => {
                             target="_blank" href={content.overview.source}>
                         </a>
                     </div>
-                    <div className="col-12 bottom-border order-md-3 tabs-container-top-margin ml-md-1 
+                    <div className="col-12 bottom-border order-md-3 tabs-container-top-margin 
                         tab-padding d-none d-xl-block">
-                        <div className="row m-0">
+                        <div className="row no-margin">
                             {tabMapping}
                         </div>
-                </div>
+                    </div>
                 </div>
                 <div className="col-12 col-md-12 col-xl-4 mt-4 side-padding link d-flex d-xl-none 
                     justify-content-center justify-content-md-start order-md-3 order-xl-3">
