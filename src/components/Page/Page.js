@@ -66,13 +66,17 @@ const Page = ({ content }) => {
     const dataMapping = INFODATA.map(data => {
         return (
             <div key={data.id} className="info-border-box">
-                <div className="row no-padding no-margin">
+                <div className="d-md-none row no-padding no-margin">
                     <div className="col-6 col-md-12 my-auto no-padding">
                         <h4>{data.title}</h4>
                     </div>
                     <div className="col-6 col-md-12 my-auto no-padding">
                         <h5>{eval(data.reference)}</h5>
                     </div>
+                </div>
+                <div className="d-none d-md-block">
+                    <h4>{data.title}</h4>
+                    <h5>{eval(data.reference)}</h5>
                 </div>
             </div>
         );
@@ -110,7 +114,7 @@ const Page = ({ content }) => {
                         target="_blank" href={content.overview.source}>
                     </a>
                 </div>
-                <div className="info-container side-padding order-md-4">
+                <div className="info-container side-padding order-md-4 d-md-flex justify-content-md-between">
                     {dataMapping}
                 </div>
             </div>

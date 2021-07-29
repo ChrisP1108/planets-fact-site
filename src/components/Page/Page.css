@@ -168,7 +168,7 @@ p {
         border-bottom: 0rem #38384f00 solid!important;
     }
     h4 {
-        margin: 0!important;
+        margin: 0 0 .9rem 0!important;
     }
     h5 {
         text-align: left!important;
@@ -213,6 +213,10 @@ p {
         margin-left: 1.2rem!important;
         margin-right: .9rem!important;
         color: #979797;
+    }
+    .info-border-box {
+        padding: 1.207rem 3.211rem 1.207rem 1rem!important;
+        margin-bottom: 2.25rem;
     }
 }
 
