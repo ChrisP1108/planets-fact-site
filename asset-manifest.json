@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/planets-fact-site/static/css/main.078cc4f7.chunk.css",
+    "main.js": "/planets-fact-site/static/js/main.f192abc8.chunk.js",
+    "main.js.map": "/planets-fact-site/static/js/main.f192abc8.chunk.js.map",
+    "runtime-main.js": "/planets-fact-site/static/js/runtime-main.d7ddf877.js",
+    "runtime-main.js.map": "/planets-fact-site/static/js/runtime-main.d7ddf877.js.map",
+    "static/css/2.fb17aa6d.chunk.css": "/planets-fact-site/static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.8d97b8d3.chunk.js": "/planets-fact-site/static/js/2.8d97b8d3.chunk.js",
+    "static/js/2.8d97b8d3.chunk.js.map": "/planets-fact-site/static/js/2.8d97b8d3.chunk.js.map",
+    "static/js/3.4e43cf26.chunk.js": "/planets-fact-site/static/js/3.4e43cf26.chunk.js",
+    "static/js/3.4e43cf26.chunk.js.map": "/planets-fact-site/static/js/3.4e43cf26.chunk.js.map",
+    "index.html": "/planets-fact-site/index.html",
+    "static/css/2.fb17aa6d.chunk.css.map": "/planets-fact-site/static/css/2.fb17aa6d.chunk.css.map",
+    "static/css/main.078cc4f7.chunk.css.map": "/planets-fact-site/static/css/main.078cc4f7.chunk.css.map",
+    "static/js/2.8d97b8d3.chunk.js.LICENSE.txt": "/planets-fact-site/static/js/2.8d97b8d3.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/planets-fact-site/static/media/background-stars.f6233a6a.svg",
+    "static/media/Earth.css": "/planets-fact-site/static/media/planet-earth.4d12af96.svg",
+    "static/media/Jupiter.css": "/planets-fact-site/static/media/planet-jupiter.b1d0956b.svg",
+    "static/media/Mars.css": "/planets-fact-site/static/media/planet-mars.f9dc1ca4.svg",
+    "static/media/Mercury.css": "/planets-fact-site/static/media/planet-mercury.1fce205c.svg",
+    "static/media/Neptune.css": "/planets-fact-site/static/media/planet-neptune.af322961.svg",
+    "static/media/Saturn.css": "/planets-fact-site/static/media/planet-saturn.801f886a.svg",
+    "static/media/Uranus.css": "/planets-fact-site/static/media/planet-uranus.e91b297f.svg",
+    "static/media/Venus.css": "/planets-fact-site/static/media/planet-venus.db5a3444.svg",
+    "static/media/Header.css": "/planets-fact-site/static/media/icon-hamburger.05a40a49.svg",
+    "static/media/Page.css": "/planets-fact-site/static/media/icon-wikipedia.3e9279ce.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d7ddf877.js",
+    "static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.8d97b8d3.chunk.js",
+    "static/css/main.078cc4f7.chunk.css",
+    "static/js/main.f192abc8.chunk.js"
+  ]
+}
