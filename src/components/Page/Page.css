@@ -55,12 +55,6 @@ h6 {
     padding: 1.25rem 0!important;
 }
 
-.tab-number-format {
-    margin-left: 1.25rem!important;
-    margin-right: 1.1875rem!important;
-    color: #979797;
-}
-
 .mobile-border-line {
     padding: 1.0925rem .2rem;
 }
@@ -137,8 +131,9 @@ h6 {
 
 p {
     font-family: 'Spartan', sans-serif;
-    font-size: 0.688!important;
+    font-size: 0.688rem!important;
     font-weight: 300!important;
+    line-height: 22px!important;
     color: #ffffff!important;
 }
 
@@ -163,9 +158,11 @@ p {
         color: #ffffff;
         letter-spacing: 0.121rem!important;
         text-align: left;
+        padding: 0.938rem 0 0.938rem 0!important;
     }
     p {
         text-align: left!important;
+        margin-top: 1.8rem!important;
     }
     .bottom-border {
         border-bottom: 0rem #38384f00 solid!important;
@@ -183,7 +180,7 @@ p {
         margin-top: 3.5rem!important;
     }
     .tab-format {
-        padding: .126065rem 0 .126065rem 0!important;
+        padding: 0!important;
         margin-bottom: 1.063rem!important;
         width: 100%!important;
         cursor: pointer;
@@ -211,6 +208,11 @@ p {
     }
     .tab-padding {
         padding: 0 2.5rem 0 4rem!important;
+    }
+    .tab-number-format {
+        margin-left: 1.2rem!important;
+        margin-right: .9rem!important;
+        color: #979797;
     }
 }
 
