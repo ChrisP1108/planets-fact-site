@@ -122,6 +122,10 @@ h6 {
     padding-bottom: 2.938rem!important;
 }
 
+.data-padding {
+    padding: 0 1.5rem 0!important;
+}
+
 .info-border-box {
     border: 0.063rem #38384F solid;
     padding: .702rem 0 .702rem 0!important;
@@ -196,6 +200,9 @@ h6 {
     .side-padding {
         padding: 0 2.5rem 0!important;
     }
+    .data-padding {
+        padding: 0 2.5rem 0!important;
+    }
     .tab-padding {
         padding: 0 2.5rem 0 4rem!important;
     }
@@ -225,12 +232,13 @@ h6 {
     }
     h5 {
         font-size: 1.8rem!important;
+        font-weight: 300!important;
     }
     h6 {
         font-size: 0.875rem!important;
     }
     .planet-space {
-        margin: 23.475rem 0 22rem 3rem!important;
+        margin: 23.475rem 0 23rem 3rem!important;
     }
     .side-padding {
         padding-right: 7.625rem!important;
@@ -260,9 +268,12 @@ h6 {
         margin: 0.2rem 0 0.5rem 0!important;
         padding: 0 2rem 0!important;
     }
+    .data-padding {
+        padding: 0 7.625rem!important;
+    }
     .info-border-box {
         padding: 1.5rem 4rem 1.5rem 1rem!important;
-        margin-right: 1.5rem;
+
     }
 }
 

@@ -127,7 +127,7 @@ const Page = ({ content }) => {
                         target="_blank" href={content.overview.source}>
                     </a>
                 </div>
-                <div className="data-container side-padding order-md-4 d-md-flex justify-content-md-between justify-content-xl-center">
+                <div className="data-container data-padding order-md-4 d-md-flex justify-content-md-between justify-content-xl-between">
                     {dataMapping}
                 </div>
             </div>
