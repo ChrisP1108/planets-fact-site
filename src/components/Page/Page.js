@@ -51,10 +51,12 @@ const Page = ({ content }) => {
             <div key={tab.id} onClick={() => tabActivate(tab.name)}  
                 className={`${eval(tab.name) ? `${content.name}-Border-Fill` : `tab-border-box`} 
                             tab-format col-4 ${content.name}-Text-Hover`}>
+                {/* Mobile Version*/}
                 <h2 className={`d-block d-md-none mobile-hover-select`}>
                     <span 
                         className={`${eval(tab.name) && `Select-${content.name}`} mobile-border-line`}>
                         {tab.mobileName}</span></h2>
+                {/* Tablet & Desktop Version */}
                 <div className="d-none d-md-flex">
                     <h2 className="tab-number-format">{`0${tab.id}`}</h2>
                     <h2>{tab.regularName}</h2>
@@ -66,6 +68,7 @@ const Page = ({ content }) => {
     const dataMapping = INFODATA.map(data => {
         return (
             <div key={data.id} className="info-border-box">
+                {/* Mobile Version*/}
                 <div className="d-md-none row no-padding no-margin">
                     <div className="col-6 col-md-12 my-auto no-padding">
                         <h4>{data.title}</h4>
@@ -74,6 +77,7 @@ const Page = ({ content }) => {
                         <h5>{eval(data.reference)}</h5>
                     </div>
                 </div>
+                {/* Tablet & Desktop Version */}
                 <div className="d-none d-md-block">
                     <h4>{data.title}</h4>
                     <h5>{eval(data.reference).toUpperCase()}</h5>
@@ -85,7 +89,8 @@ const Page = ({ content }) => {
     return (
         <div className="page">
             <div className="row no-margin">
-                <div className="col-12 col-md-6 bottom-border order-md-3 tabs-container-top-margin ml-md-1 tab-padding d-xl-none">
+                <div className="col-12 col-md-6 bottom-border order-md-3 tabs-container-top-margin 
+                    ml-md-1 tab-padding d-xl-none">
                     <div className="row m-0">
                         {tabMapping}
                     </div>
@@ -103,9 +108,11 @@ const Page = ({ content }) => {
                         <h1>{content.name.toUpperCase()}</h1>
                     </div>
                     <div className="col-12 text-center side-padding">
-                        <h6>{overview ? content.overview.content : structure ? content.structure.content : content.geology.content}</h6>
+                        <h6>{overview ? content.overview.content : structure ? content.structure.content 
+                        : content.geology.content}</h6>
                     </div>
-                    <div className="col-12 col-md-12 d-none link d-xl-flex justify-content-center justify-content-md-start order-md-3 order-xl-3">
+                    <div className="col-12 col-md-12 d-none link d-xl-flex justify-content-center 
+                        justify-content-md-start order-md-3 order-xl-3">
                         <h3>Source : <a target="_blank" rel="noreferrer" 
                             href={content.overview.source}>Wikipedia</a>
                         </h3>
@@ -113,13 +120,15 @@ const Page = ({ content }) => {
                             target="_blank" href={content.overview.source}>
                         </a>
                     </div>
-                    <div className="col-12 bottom-border order-md-3 tabs-container-top-margin ml-md-1 tab-padding d-none d-xl-block">
+                    <div className="col-12 bottom-border order-md-3 tabs-container-top-margin ml-md-1 
+                        tab-padding d-none d-xl-block">
                         <div className="row m-0">
                             {tabMapping}
                         </div>
                 </div>
                 </div>
-                <div className="col-12 col-md-12 col-xl-4 mt-4 source-padding link d-flex d-xl-none justify-content-center justify-content-md-start link-regular-spacing order-md-3 order-xl-3">
+                <div className="col-12 col-md-12 col-xl-4 mt-4 side-padding link d-flex d-xl-none 
+                    justify-content-center justify-content-md-start order-md-3 order-xl-3">
                     <h3>Source : <a target="_blank" rel="noreferrer" 
                         href={content.overview.source}>Wikipedia</a>
                     </h3>
@@ -127,7 +136,8 @@ const Page = ({ content }) => {
                         target="_blank" href={content.overview.source}>
                     </a>
                 </div>
-                <div className="data-container data-padding order-md-4 d-md-flex justify-content-md-between justify-content-xl-between">
+                <div className="data-container data-padding order-md-4 d-md-flex justify-content-md-between 
+                    justify-content-xl-between">
                     {dataMapping}
                 </div>
             </div>
