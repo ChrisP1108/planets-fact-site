@@ -47,12 +47,11 @@ h5 {
 
 h6 {
     font-family: 'Spartan', sans-serif;
-    font-size: 0.563rem!important;
-    font-weight: 700!important;
-    color:#979797;
-    text-align: center;
-    margin: 0!important;
-    padding: 1.25rem 0!important;
+    font-size: 0.688rem!important;
+    font-weight: 300!important;
+    line-height: 22px!important;
+    color: #ffffff!important;
+    margin-top: 1.625rem!important;
 }
 
 .mobile-border-line {
@@ -118,7 +117,7 @@ h6 {
     border-bottom: 0.063rem #38384F solid!important;
 }
 
-.info-container {
+.data-container {
     margin-top: 2.238rem!important;
     padding-bottom: 2.938rem!important;
 }
@@ -127,14 +126,6 @@ h6 {
     border: 0.063rem #38384F solid;
     padding: .702rem 0 .702rem 0!important;
     margin-bottom: .5rem;
-}
-
-p {
-    font-family: 'Spartan', sans-serif;
-    font-size: 0.688rem!important;
-    font-weight: 300!important;
-    line-height: 22px!important;
-    color: #ffffff!important;
 }
 
 .col {
@@ -160,10 +151,6 @@ p {
         text-align: left;
         padding: 0.938rem 0 0.938rem 0!important;
     }
-    p {
-        text-align: left!important;
-        margin-top: 1.8rem!important;
-    }
     .bottom-border {
         border-bottom: 0rem #38384f00 solid!important;
     }
@@ -171,6 +158,9 @@ p {
         margin: 0 0 .9rem 0!important;
     }
     h5 {
+        text-align: left!important;
+    }
+    h6 {
         text-align: left!important;
     }
     .planet-space {
@@ -220,27 +210,59 @@ p {
     }
 }
 
-@media(min-width: 992px) {
+@media(min-width: 1200px) {
     h1 {
         font-size: 5rem!important;
-        margin-top: 9.375rem!important
+        margin-top: 7.975rem!important
     }
     h2 {
-        font-size: 0.75rem!important;
+        font-size: 0.65rem!important;
+        font-weight: 600!important;
+        padding: 1.125rem 0 1.125rem 0!important;
+    }
+    h4 {
+        font-size: 0.62rem!important;
+    }
+    h5 {
+        font-size: 1.8rem!important;
+    }
+    h6 {
+        font-size: 0.875rem!important;
     }
     .planet-space {
-        margin: 26.475rem 0 26.475rem 4rem!important;
+        margin: 23.475rem 0 22rem 3rem!important;
     }
     .side-padding {
-        padding-right: 3.938rem!important;
+        padding-right: 7.625rem!important;
+        padding-left: 0rem!important;
     }
     .tab-padding {
-        padding: 0 3.938rem 0 2.5rem!important;
+        padding: 0 7.625rem 0 0rem!important;
         margin: 0!important;
     }
-    p {
-        font-size: 0.875rem!important;
-        margin: 0!important;
+    .geology-positioning {
+        position: absolute;
+        left: -50%;
+        right: -50.1%;
+        top: -1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .link {
+        margin-top: 3.5rem!important;
+        margin-bottom: 2.75rem!important;
+    }
+    .tab-number-format {
+        margin-right: .9rem!important;
+        color: #979797;
+    }
+    .data-container {
+        margin: 0.2rem 0 0.5rem 0!important;
+        padding: 0 2rem 0!important;
+    }
+    .info-border-box {
+        padding: 1.5rem 4rem 1.5rem 1rem!important;
+        margin-right: 1.5rem;
     }
 }
 

@@ -76,7 +76,7 @@ const Page = ({ content }) => {
                 </div>
                 <div className="d-none d-md-block">
                     <h4>{data.title}</h4>
-                    <h5>{eval(data.reference)}</h5>
+                    <h5>{eval(data.reference).toUpperCase()}</h5>
                 </div>
             </div>
         );
@@ -85,12 +85,12 @@ const Page = ({ content }) => {
     return (
         <div className="page">
             <div className="row no-margin">
-                <div className="col-12 col-md-6 bottom-border order-md-3 tabs-container-top-margin ml-md-1 tab-padding d-lg-none">
+                <div className="col-12 col-md-6 bottom-border order-md-3 tabs-container-top-margin ml-md-1 tab-padding d-xl-none">
                     <div className="row m-0">
                         {tabMapping}
                     </div>
                 </div>
-                <div className="col-12 col-lg-7 planet-space no-padding position-relative order-md-1">
+                <div className="col-12 col-xl-7 planet-space no-padding position-relative order-md-1">
                     <div className={`${overview || surface ? `Planet-${content.name}` 
                         : `Internal-${content.name}`} planet-positioning`}>
                     </div>
@@ -98,14 +98,14 @@ const Page = ({ content }) => {
                         : `d-none`} geology-positioning`}>
                     </div>
                 </div>
-                <div className="col-md-6 col-lg-4 order-md-2 p-md-0">
+                <div className="col-md-6 col-xl-4 order-md-2 p-md-0">
                     <div className="col-12 text-center text-md-center side-padding">
                         <h1>{content.name.toUpperCase()}</h1>
                     </div>
-                    <div className="col-12 text-center mt-4 side-padding">
-                        <p>{overview ? content.overview.content : structure ? content.structure.content : content.geology.content}</p>
+                    <div className="col-12 text-center side-padding">
+                        <h6>{overview ? content.overview.content : structure ? content.structure.content : content.geology.content}</h6>
                     </div>
-                    <div className="col-12 col-md-12 mt-4 d-none source-padding link d-lg-flex justify-content-center justify-content-md-start link-regular-spacing order-md-3 order-lg-3">
+                    <div className="col-12 col-md-12 d-none link d-xl-flex justify-content-center justify-content-md-start order-md-3 order-xl-3">
                         <h3>Source : <a target="_blank" rel="noreferrer" 
                             href={content.overview.source}>Wikipedia</a>
                         </h3>
@@ -113,13 +113,13 @@ const Page = ({ content }) => {
                             target="_blank" href={content.overview.source}>
                         </a>
                     </div>
-                    <div className="col-12 bottom-border order-md-3 tabs-container-top-margin ml-md-1 tab-padding d-none d-lg-block">
+                    <div className="col-12 bottom-border order-md-3 tabs-container-top-margin ml-md-1 tab-padding d-none d-xl-block">
                         <div className="row m-0">
                             {tabMapping}
                         </div>
                 </div>
                 </div>
-                <div className="col-12 col-md-12 col-lg-4 mt-4 source-padding link d-flex d-lg-none justify-content-center justify-content-md-start link-regular-spacing order-md-3 order-lg-3">
+                <div className="col-12 col-md-12 col-xl-4 mt-4 source-padding link d-flex d-xl-none justify-content-center justify-content-md-start link-regular-spacing order-md-3 order-xl-3">
                     <h3>Source : <a target="_blank" rel="noreferrer" 
                         href={content.overview.source}>Wikipedia</a>
                     </h3>
@@ -127,7 +127,7 @@ const Page = ({ content }) => {
                         target="_blank" href={content.overview.source}>
                     </a>
                 </div>
-                <div className="info-container side-padding order-md-4 d-md-flex justify-content-md-between">
+                <div className="data-container side-padding order-md-4 d-md-flex justify-content-md-between justify-content-xl-center">
                     {dataMapping}
                 </div>
             </div>
