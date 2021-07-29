@@ -85,12 +85,12 @@ const Page = ({ content }) => {
     return (
         <div className="page">
             <div className="row no-margin">
-                <div className="col-12 col-md-6 bottom-border order-md-3 tabs-container-top-margin ml-md-1 tab-padding">
+                <div className="col-12 col-md-6 bottom-border order-md-3 tabs-container-top-margin ml-md-1 tab-padding d-lg-none">
                     <div className="row m-0">
                         {tabMapping}
                     </div>
                 </div>
-                <div className="col-12 planet-space no-padding position-relative order-md-1">
+                <div className="col-12 col-lg-7 planet-space no-padding position-relative order-md-1">
                     <div className={`${overview || surface ? `Planet-${content.name}` 
                         : `Internal-${content.name}`} planet-positioning`}>
                     </div>
@@ -98,15 +98,28 @@ const Page = ({ content }) => {
                         : `d-none`} geology-positioning`}>
                     </div>
                 </div>
-                <div className="col-md-6 order-md-2 p-md-0">
+                <div className="col-md-6 col-lg-4 order-md-2 p-md-0">
                     <div className="col-12 text-center text-md-center side-padding">
                         <h1>{content.name.toUpperCase()}</h1>
                     </div>
                     <div className="col-12 text-center mt-4 side-padding">
                         <p>{overview ? content.overview.content : structure ? content.structure.content : content.geology.content}</p>
                     </div>
+                    <div className="col-12 col-md-12 mt-4 d-none source-padding link d-lg-flex justify-content-center justify-content-md-start link-regular-spacing order-md-3 order-lg-3">
+                        <h3>Source : <a target="_blank" rel="noreferrer" 
+                            href={content.overview.source}>Wikipedia</a>
+                        </h3>
+                        <a className="wiki-link my-auto" rel="noreferrer" 
+                            target="_blank" href={content.overview.source}>
+                        </a>
+                    </div>
+                    <div className="col-12 bottom-border order-md-3 tabs-container-top-margin ml-md-1 tab-padding d-none d-lg-block">
+                        <div className="row m-0">
+                            {tabMapping}
+                        </div>
                 </div>
-                <div className="col-12 col-md-12 mt-4 source-padding link d-flex justify-content-center justify-content-md-start link-regular-spacing order-md-3">
+                </div>
+                <div className="col-12 col-md-12 col-lg-4 mt-4 source-padding link d-flex d-lg-none justify-content-center justify-content-md-start link-regular-spacing order-md-3 order-lg-3">
                     <h3>Source : <a target="_blank" rel="noreferrer" 
                         href={content.overview.source}>Wikipedia</a>
                     </h3>
