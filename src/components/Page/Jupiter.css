@@ -40,9 +40,12 @@
     .Geology-Jupiter {
         transform: scale(.31724135);
     }
+    .Jupiter-Border-Fill {
+        background-color: #D83A34;
+    }
 }
 
-@media(min-width: 992px) {
+@media(min-width: 1200px) {
     .Planet-Jupiter {
         transform: scale(1);
     }

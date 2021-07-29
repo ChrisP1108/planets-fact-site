@@ -40,9 +40,12 @@
     .Geology-Earth {
         transform: scale(.31724135);
     }
+    .Earth-Border-Fill {
+        background-color: #6D2ED5;
+    }
 }
 
-@media(min-width: 992px) {
+@media(min-width: 1200px) {
     .Planet-Earth {
         transform: scale(1);
     }

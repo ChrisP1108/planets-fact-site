@@ -40,9 +40,12 @@
     .Geology-Venus {
         transform: scale(.31724135);
     }
+    .Venus-Border-Fill {
+        background-color: #EDA249;
+    }
 }
 
-@media(min-width: 992px) {
+@media(min-width: 1200px) {
     .Planet-Venus {
         transform: scale(1);
     }

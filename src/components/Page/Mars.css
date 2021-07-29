@@ -40,9 +40,12 @@
     .Geology-Mars {
         transform: scale(.31724135);
     }
+    .Mars-Border-Fill {
+        background-color: #D14C32;
+    }
 }
 
-@media(min-width: 992px) {
+@media(min-width: 1200px) {
     .Planet-Mars {
         transform: scale(1);
     }

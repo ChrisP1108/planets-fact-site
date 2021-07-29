@@ -40,9 +40,12 @@
     .Geology-Uranus {
         transform: scale(.31724135);
     }
+    .Uranus-Border-Fill {
+        background-color: #1EC1A2;
+    }
 }
 
-@media(min-width: 992px) {
+@media(min-width: 1200px) {
     .Planet-Uranus {
         transform: scale(1);
     }

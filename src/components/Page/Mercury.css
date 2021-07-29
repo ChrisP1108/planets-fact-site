@@ -40,9 +40,12 @@
     .Geology-Mercury {
         transform: scale(.31724135);
     }
+    .Mercury-Border-Fill {
+        background-color: #419EBB;
+    }
 }
 
-@media(min-width: 992px) {
+@media(min-width: 1200px) {
     .Planet-Mercury {
         transform: scale(1);
     }

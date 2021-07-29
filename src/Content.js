@@ -41,7 +41,7 @@ export const NAVLINKS = [
     }
 ]
 
-export const TABDATA = [
+export const INFODATA = [
     {
         id: 1,
         title: "ROTATION TIME",
@@ -61,6 +61,27 @@ export const TABDATA = [
         id: 4,
         title: "AVERAGE TEMP.",
         reference: "content.temperature"
+    }
+]
+
+export const TABS = [
+    {
+        id: 1,
+        name: 'overview',
+        mobileName: 'OVERVIEW',
+        regularName: 'OVERVIEW',
+    },
+    {
+        id: 2,
+        name: 'structure',
+        mobileName: 'STRUCTURE',
+        regularName: 'INTERNAL STRUCTURE',
+    },
+    {
+        id: 3,
+        name: 'surface',
+        mobileName: 'SURFACE',
+        regularName: 'SURFACE GEOLOGY',
     }
 ]
 

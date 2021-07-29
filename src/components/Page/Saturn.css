@@ -40,9 +40,12 @@
     .Geology-Saturn {
         transform: scale(.31724135);
     }
+    .Saturn-Border-Fill {
+        background-color: #CD5120;
+    }
 }
 
-@media(min-width: 992px) {
+@media(min-width: 1200px) {
     .Planet-Saturn {
         transform: scale(1);
     }

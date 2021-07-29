@@ -40,9 +40,12 @@
     .Geology-Neptune {
         transform: scale(.31724135);
     }
+    .Neptune-Border-Fill {
+        background-color: #2D68F0;
+    }
 }
 
-@media(min-width: 992px) {
+@media(min-width: 1200px) {
     .Planet-Neptune {
         transform: scale(1);
     }
